@@ -21,7 +21,7 @@ const properties = {
   indicators: true,
   arrows: true,
   pauseOnHover: true,
-  //   onChange: (oldIndex, newIndex) => {},
+  onChange: (oldIndex, newIndex) => {},
 };
 
 export default function Slider() {
