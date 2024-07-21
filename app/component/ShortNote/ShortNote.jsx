@@ -2,13 +2,20 @@ import Image from "next/image";
 import React from "react";
 import project from "@/public/images/ueo_project3.png";
 import esanpeople from "@/public/images/ueo_project4.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function ShortNote() {
   return (
     <div className="flex">
-      <div className="image-container ">
+      <div className="image-container " data-aos="fade-up">
         <h2>Our Projects</h2>
-        <Image src={project} alt="our projects" layout="responsive" />
+        <Image
+          src={project}
+          alt="our projects"
+          layout="responsive"
+          data-aos="fade-right"
+        />
         <div className="p-2 content">
           <p>
             The United Esan Organization (U.E.O) in Houston, Texas is excited to
@@ -37,12 +44,13 @@ export default function ShortNote() {
           </button>
         </div>
       </div>
-      <div className="image-container">
+      <div className="image-container" data-aos="fade-up">
         <h2>Esan People and Culture</h2>
         <Image
           src={esanpeople}
           alt="esan people and culture"
           layout="responsive"
+          data-aos="fade-left"
         />
         <div className="p-2 content">
           <p>
