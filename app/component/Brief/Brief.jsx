@@ -11,13 +11,8 @@ export default function Brief() {
 
   return (
     <div className="  my-5">
-      <h2 className="font-bebasNeue text-sharp-red text-3xl p-2 text-center">
-        Summary of United Esan Organization Houston
-      </h2>
-      <div
-        className="bg-light-blue text-white px-5 pt-5 text-lg "
-        data-aos="fade-up"
-      >
+      <h2 className="">Summary of United Esan Organization Houston</h2>
+      <div className="bg-white px-5 pt-5 text-lg " data-aos="fade-up">
         <p>
           The United Esan Organization (U.E.O) in Houston, Texas is committed to
           the preservation and promotion of Esan culture and heritage. The
@@ -46,7 +41,7 @@ export default function Brief() {
           strong sense of identity, support, and shared purpose among its
           members.
         </p>
-        <button className="text-center bg-sharp-red rounded-full w-full py-2 outline-2 my-2">
+        <button className="text-center bg-sharp-red rounded-full w-full py-2 outline-2 my-2 text-white hover:text-light-blue">
           Learn more
         </button>
       </div>

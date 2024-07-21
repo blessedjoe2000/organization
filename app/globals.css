@@ -6,11 +6,14 @@
 @tailwind utilities;
 
 body {
-  @apply font-blinker;
+  @apply font-blinker text-light-blue;
+}
+h2 {
+  @apply font-bebasNeue text-sharp-red text-3xl p-2 text-center;
 }
 
 .nav-list:hover {
-  @apply text-sharp-red underline;
+  @apply text-light-blue underline;
 }
 
 .scrolling-text {
@@ -26,4 +29,14 @@ body {
   to {
     transform: translateX(-100%);
   }
+}
+
+.image-container {
+  width: 100%;
+  background-color: white;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
 }
