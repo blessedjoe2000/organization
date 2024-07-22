@@ -10,6 +10,10 @@ module.exports = {
       fontFamily: {
         blinker: ["Blinker", "sans-serif"],
         bebasNeue: ["Bebas Neue", "Blinker", "sans-serif"],
+        pacifico: ["Pacifico", "Blinker"],
+        amita: ["Amita", "Blinker"],
+        protestRevolution: ["Protest Revolution", "Blinker"],
+        aclonica: ["Aclonica", "Blinker"],
       },
 
       colors: {
