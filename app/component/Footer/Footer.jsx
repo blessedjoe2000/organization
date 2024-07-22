@@ -42,8 +42,8 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-      <div>
-        <h3 className="text-center pb-5">
+      <div className="border-t-2">
+        <h3 className="text-center p-5">
           United Esan Association. All Rights Reserved. ©
           {new Date().getFullYear()}
         </h3>

@@ -6,8 +6,11 @@ import "aos/dist/aos.css";
 
 export default function ShortNote() {
   return (
-    <div className="flex">
-      <div className="image-container p-5 shadow-md" data-aos="fade-up">
+    <div className="flex justify-center items-center gap-1">
+      <div
+        className="image-container p-5 mb-5 shadow-md rounded-md ml-2"
+        data-aos="fade-up"
+      >
         <h2>Our Projects</h2>
         <Image
           src={project}
@@ -44,7 +47,10 @@ export default function ShortNote() {
           </button>
         </div>
       </div>
-      <div className="image-container p-5 shadow-md" data-aos="fade-up">
+      <div
+        className="image-container p-5 shadow-md rounded-md mb-5 mr-2"
+        data-aos="fade-up"
+      >
         <h2>Esan People and Culture</h2>
         <Image
           src={esanpeople}
