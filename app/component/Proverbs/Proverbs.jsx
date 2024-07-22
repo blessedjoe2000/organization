@@ -30,10 +30,7 @@ export default function Proverbs({ initialProverb }) {
   return (
     <div className="bg-black text-white p-28 text-center my-10">
       <div className="flex justify-center items-center gap-2 font-semibold text-2xl ">
-        <h3 className="font-protestRevolution">
-          {" "}
-          {currentProverb.esanProverb}
-        </h3>
+        <h3 className="font-protestRevolution">{currentProverb.esanProverb}</h3>
         <p className="font-aclonica ">"{currentProverb.value}"</p>
       </div>
 
