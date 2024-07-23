@@ -18,7 +18,7 @@ function Header() {
         <Link href="/executives" className="nav-list">
           Executives
         </Link>
-        <Link href="/" className="nav-list">
+        <Link href="/esanheritage" className="nav-list">
           Esan Heritage
         </Link>
         <Link href="/" className="nav-list">

@@ -62,6 +62,13 @@ export default function about() {
           </p>
         </div>
       </div>
+      <div className="m-5">
+        <button className="w-full bg-sharp-red  text-white  py-2 rounded-lg text-lg ">
+          <Link href="/" target="_blank" className="">
+            Click here to download UEO Constitution
+          </Link>
+        </button>
+      </div>
       <div className="bg-white p-5 text-center">
         <h2>Become a member</h2>
         <p>
@@ -105,6 +112,27 @@ export default function about() {
           We look forward to your participation and are excited to have you join
           our growing family. Your involvement will help us continue to
           celebrate and preserve the rich Esan culture and heritage.
+        </p>
+      </div>
+      <div className="m-5">
+        <button className="w-full bg-sharp-red  text-white  py-2 rounded-lg text-lg ">
+          <Link href="/" target="_blank" className="">
+            Click here to download UEO Benefits
+          </Link>
+        </button>
+      </div>
+      <div className="bg-white my-5 p-5">
+        <h2>Our Meeting</h2>
+        <p>
+          We gather in person once every month, specifically on the second
+          Sunday of each month. These meetings provide an excellent opportunity
+          for members to connect, share ideas, and celebrate our rich Esan
+          heritage together.
+        </p>
+        <p className="pt-5">
+          For the exact meeting location, please visit our <q>Contact Us</q>{" "}
+          page where you will find the address and other relevant details. We
+          look forward to seeing you there!
         </p>
       </div>
     </div>
