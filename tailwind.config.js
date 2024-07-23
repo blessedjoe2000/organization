@@ -21,6 +21,7 @@ module.exports = {
         orange: "#FF7F3E",
         offwhite: "#FCF8F3",
         "sharp-red": "#E4003A",
+        wine: "#73201C",
       },
     },
   },

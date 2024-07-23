@@ -10,8 +10,8 @@ export default function Footer() {
           <SocialMedia />
         </div>
         <div className="flex flex-col gap-2">
-          <Link href="/">About Us</Link>
-          <Link href="/">Projects</Link>
+          <Link href="/about">About Us</Link>
+          <Link href="/projects">Projects</Link>
           <Link href="/">Contact Us</Link>
         </div>
         <div className="flex flex-col gap-2">
