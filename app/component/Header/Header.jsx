@@ -15,7 +15,7 @@ function Header() {
         <Link href="/projects" className="nav-list">
           Projects
         </Link>
-        <Link href="/" className="nav-list">
+        <Link href="/executives" className="nav-list">
           Executives
         </Link>
         <Link href="/" className="nav-list">

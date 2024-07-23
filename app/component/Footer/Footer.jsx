@@ -15,7 +15,7 @@ export default function Footer() {
           <Link href="/">Contact Us</Link>
         </div>
         <div className="flex flex-col gap-2">
-          <Link href="/">Executives</Link>
+          <Link href="/executives">Executives</Link>
           <Link href="/">Gallery</Link>
           <Link href="/">Esan Heritage</Link>
         </div>
