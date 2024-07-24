@@ -3,11 +3,18 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useRouter } from "next/navigation";
 
 export default function Brief() {
   useEffect(() => {
     AOS.init({ duration: 1200 });
   });
+
+  const router = useRouter();
+
+  const linkToAbout = () => {
+    router.push("/about");
+  };
 
   return (
     <div className="  my-5">
@@ -41,7 +48,10 @@ export default function Brief() {
           strong sense of identity, support, and shared purpose among its
           members.
         </p>
-        <button className="text-center bg-sharp-red rounded-full w-full py-2 outline-2 my-2 text-white hover:text-light-blue">
+        <button
+          onClick={linkToAbout}
+          className="text-center bg-sharp-red rounded-full w-full py-2 outline-2 my-2 text-white hover:text-light-blue"
+        >
           Learn more
         </button>
       </div>

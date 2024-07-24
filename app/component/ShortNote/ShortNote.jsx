@@ -1,10 +1,23 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import project from "@/public/images/projects/ueo_project3.png";
 import esanpeople from "@/public/images/projects/ueo_project4.png";
 import "aos/dist/aos.css";
+import { useRouter } from "next/navigation";
 
 export default function ShortNote() {
+  const router = useRouter();
+
+  const linkToEsanHeritage = () => {
+    router.push("/esanheritage");
+  };
+
+  const linkToProject = () => {
+    router.push("/");
+  };
+
   return (
     <div className="flex justify-center items-center gap-1">
       <div
@@ -42,7 +55,10 @@ export default function ShortNote() {
             our community, providing a place for cultural exchange, education,
             and economic empowerment.
           </p>
-          <button className="bg-sharp-red w-full rounded-full p-1 text-white hover:text-light-blue my-2">
+          <button
+            onClick={linkToProject}
+            className="bg-sharp-red w-full rounded-full p-1 text-white hover:text-light-blue my-2"
+          >
             Read more
           </button>
         </div>
@@ -81,7 +97,10 @@ export default function ShortNote() {
             Okalo, Okhuesan, Onogholo, Opoji, Oria, Orowa, Uromi, Udo, Ugbegun,
             Ugboha, Ubiaja, Urohi, Ugun, Ujiogba, Ukhun, Uzea.
           </p>
-          <button className="bg-sharp-red w-full rounded-full p-1 text-white hover:text-light-blue my-2">
+          <button
+            onClick={linkToEsanHeritage}
+            className="bg-sharp-red w-full rounded-full p-1 text-white hover:text-light-blue my-2"
+          >
             Read more
           </button>
         </div>

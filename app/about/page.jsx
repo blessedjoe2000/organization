@@ -63,11 +63,11 @@ export default function about() {
         </div>
       </div>
       <div className="m-5">
-        <button className="w-full bg-sharp-red  text-white  py-2 rounded-lg text-lg ">
-          <Link href="/" target="_blank" className="">
+        <Link href="/" target="_blank" className=" ">
+          <button className="w-full bg-sharp-red  text-white  py-2 rounded-full text-lg hover:text-light-blue">
             Click here to download UEO Constitution
-          </Link>
-        </button>
+          </button>
+        </Link>
       </div>
       <div className="bg-white p-5 text-center">
         <h2>Become a member</h2>
@@ -85,7 +85,7 @@ export default function about() {
             <Link
               href="/files/UEO-REG-FORM.pdf"
               target="_blank"
-              className="px-2 py-1 bg-light-blue text-white rounded-md"
+              className="px-2 py-1 bg-light-blue text-white rounded-md hover:text-sharp-red"
             >
               here
             </Link>{" "}
@@ -97,7 +97,7 @@ export default function about() {
             <Link
               href="/"
               target="_blank"
-              className="px-2 py-1 bg-sharp-red text-white rounded-md"
+              className="px-2 py-1 bg-sharp-red text-white rounded-md hover:text-light-blue"
             >
               pay
             </Link>
@@ -115,11 +115,11 @@ export default function about() {
         </p>
       </div>
       <div className="m-5">
-        <button className="w-full bg-sharp-red  text-white  py-2 rounded-lg text-lg ">
-          <Link href="/" target="_blank" className="">
+        <Link href="/" target="_blank" className="">
+          <button className="w-full bg-sharp-red  text-white  py-2 rounded-full text-lg hover:text-light-blue">
             Click here to download UEO Benefits
-          </Link>
-        </button>
+          </button>
+        </Link>
       </div>
       <div className="bg-white my-5 p-5">
         <h2>Our Meeting</h2>
