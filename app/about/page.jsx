@@ -69,6 +69,35 @@ export default function about() {
           </button>
         </Link>
       </div>
+      <div className="bg-white my-5 p-5">
+        <h2>Our Meeting</h2>
+        <p>
+          We gather in person once every month, specifically on the second
+          Sunday of each month. These meetings provide an excellent opportunity
+          for members to connect, share ideas, and celebrate our rich Esan
+          heritage together. To support our activities and initiatives, we pay a
+          monthly due of $30.
+        </p>
+        <p className="pt-5">
+          For the exact meeting location, please visit our{" "}
+          <Link href="/contact" className=" hover:text-sharp-red">
+            <q>Contact Us</q>
+          </Link>{" "}
+          page where you will find the address and other relevant details. We
+          look forward to seeing you there!
+        </p>
+      </div>
+      <div className="m-5">
+        <Link
+          href="https://buy.stripe.com/6oEcPNcak5Ffb60cMN"
+          target="_blank"
+          className=""
+        >
+          <button className="w-full bg-sharp-red  text-white  py-2 rounded-full text-lg hover:text-light-blue">
+            Click here to pay UEO monthly due
+          </button>
+        </Link>
+      </div>
       <div className="bg-white p-5 text-center">
         <h2>Become a member</h2>
         <p>
@@ -95,7 +124,7 @@ export default function about() {
             <strong>Pay the Registration Fee:</strong> A registration fee of
             twenty-five dollars ($25) is required. Click to{" "}
             <Link
-              href="/"
+              href="https://buy.stripe.com/9AQ8zx0rCaZzb60cMO"
               target="_blank"
               className="px-2 py-1 bg-sharp-red text-white rounded-md hover:text-light-blue"
             >
@@ -120,20 +149,6 @@ export default function about() {
             Click here to download UEO Benefits
           </button>
         </Link>
-      </div>
-      <div className="bg-white my-5 p-5">
-        <h2>Our Meeting</h2>
-        <p>
-          We gather in person once every month, specifically on the second
-          Sunday of each month. These meetings provide an excellent opportunity
-          for members to connect, share ideas, and celebrate our rich Esan
-          heritage together.
-        </p>
-        <p className="pt-5">
-          For the exact meeting location, please visit our <q>Contact Us</q>{" "}
-          page where you will find the address and other relevant details. We
-          look forward to seeing you there!
-        </p>
       </div>
     </div>
   );

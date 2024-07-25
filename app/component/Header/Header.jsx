@@ -24,15 +24,16 @@ function Header() {
         <Link href="/" className="nav-list">
           Gallery
         </Link>
-        <Link href="/" className="nav-list">
+        <Link href="/contact" className="nav-list">
           Contact Us
         </Link>
       </div>
       <Link
-        href="/"
+        href="https://donate.stripe.com/6oE8zx6Q0c3D7TO288"
+        target="_blank"
         className="flex justify-center items-center gap-0.5 hover:text-light-blue hover:underline px-3 py-1 bg-sharp-red rounded-xl text-white font-semibold"
       >
-        <p>DONATE</p>
+        <button>DONATE</button>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
