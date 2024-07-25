@@ -1,10 +1,19 @@
 import "aos/dist/aos.css";
 import Link from "next/link";
+import Button from "../component/Button/Button";
 
 export default function about() {
+  const constitutionLink = "/";
+  const constitutionText = "Click here to download UEO Constitution";
+  const target = "_blank";
+  const dueLink = "https://buy.stripe.com/6oEcPNcak5Ffb60cMN";
+  const dueText = "Click here to pay UEO monthly due";
+  const benefitText = "Click here to download UEO Benefits";
+  const benefitLink = "/";
+
   return (
     <div>
-      <div className="my-5 p-5 bg-white">
+      <div className="m-5 p-5 bg-white">
         <h2>Background History</h2>
         <p>
           The United Esan Organization (UEO) in Houston, Texas has a rich
@@ -63,11 +72,11 @@ export default function about() {
         </div>
       </div>
       <div className="m-5">
-        <Link href="/" target="_blank" className=" ">
-          <button className="w-full bg-sharp-red  text-white  py-2 rounded-full text-lg hover:text-light-blue">
-            Click here to download UEO Constitution
-          </button>
-        </Link>
+        <Button
+          link={constitutionLink}
+          text={constitutionText}
+          target={target}
+        />
       </div>
       <div className="bg-white my-5 p-5">
         <h2>Our Meeting</h2>
@@ -88,15 +97,7 @@ export default function about() {
         </p>
       </div>
       <div className="m-5">
-        <Link
-          href="https://buy.stripe.com/6oEcPNcak5Ffb60cMN"
-          target="_blank"
-          className=""
-        >
-          <button className="w-full bg-sharp-red  text-white  py-2 rounded-full text-lg hover:text-light-blue">
-            Click here to pay UEO monthly due
-          </button>
-        </Link>
+        <Button link={dueLink} text={dueText} target={target} />
       </div>
       <div className="bg-white p-5 text-center">
         <h2>Become a member</h2>
@@ -144,11 +145,7 @@ export default function about() {
         </p>
       </div>
       <div className="m-5">
-        <Link href="/" target="_blank" className="">
-          <button className="w-full bg-sharp-red  text-white  py-2 rounded-full text-lg hover:text-light-blue">
-            Click here to download UEO Benefits
-          </button>
-        </Link>
+        <Button link={benefitLink} text={benefitText} target={target} />
       </div>
     </div>
   );

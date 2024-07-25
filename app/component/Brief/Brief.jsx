@@ -3,23 +3,19 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useRouter } from "next/navigation";
+import Button from "../Button/Button";
 
 export default function Brief() {
+  const link = "/about";
+  const text = "Learn more";
   useEffect(() => {
     AOS.init({ duration: 1200 });
   });
 
-  const router = useRouter();
-
-  const linkToAbout = () => {
-    router.push("/about");
-  };
-
   return (
     <div className="  my-5">
       <h2 className="">Summary of United Esan Organization Houston</h2>
-      <div className="bg-white px-5 pt-5 text-lg " data-aos="fade-up">
+      <div className="bg-white p-5  text-lg m-5" data-aos="fade-up">
         <p>
           The United Esan Organization (U.E.O) in Houston, Texas is committed to
           the preservation and promotion of Esan culture and heritage. The
@@ -48,12 +44,7 @@ export default function Brief() {
           strong sense of identity, support, and shared purpose among its
           members.
         </p>
-        <button
-          onClick={linkToAbout}
-          className="text-center bg-sharp-red rounded-full w-full py-2 outline-2 my-2 text-white hover:text-light-blue"
-        >
-          Learn more
-        </button>
+        <Button link={link} text={text} />
       </div>
     </div>
   );

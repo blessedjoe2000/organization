@@ -5,18 +5,12 @@ import React from "react";
 import project from "@/public/images/projects/ueo_project3.png";
 import esanpeople from "@/public/images/projects/ueo_project4.png";
 import "aos/dist/aos.css";
-import { useRouter } from "next/navigation";
+import Button from "../Button/Button";
 
 export default function ShortNote() {
-  const router = useRouter();
-
-  const linkToEsanHeritage = () => {
-    router.push("/esanheritage");
-  };
-
-  const linkToProject = () => {
-    router.push("/");
-  };
+  const linkToEsanHeriate = "/esanheritage";
+  const linkToProject = "/projects";
+  const text = "Read more";
 
   return (
     <div className="flex justify-center items-center gap-1">
@@ -55,12 +49,7 @@ export default function ShortNote() {
             our community, providing a place for cultural exchange, education,
             and economic empowerment.
           </p>
-          <button
-            onClick={linkToProject}
-            className="bg-sharp-red w-full rounded-full p-1 text-white hover:text-light-blue my-2"
-          >
-            Read more
-          </button>
+          <Button link={linkToProject} text={text} />
         </div>
       </div>
       <div
@@ -76,33 +65,30 @@ export default function ShortNote() {
           className="my-5"
         />
         <div className=" content">
-          <p>
-            The Esan people are an ethnic group from southern Nigeria who speak
-            the Esan language. They are traditionally known as agriculturalists,
-            trado-medical practitioners, mercenary warriors, and hunters. The
-            modern Esan nation is believed to have been organized during the
-            15th century.
-          </p>
+          <div>
+            <p>
+              The Esan people are an ethnic group from southern Nigeria who
+              speak the Esan language. They are traditionally known as
+              agriculturalists, trado-medical practitioners, mercenary warriors,
+              and hunters. The modern Esan nation is believed to have been
+              organized during the 15th century.
+            </p>
 
-          <p className="my-5">
-            This formation occurred when nobles and princesses left the Benin
-            Empire to establish communities and kingdoms, known as eguares,
-            among the aboriginal peoples they encountered.
-          </p>
+            <p className="my-5">
+              This formation occurred when nobles and princesses left the Benin
+              Empire to establish communities and kingdoms, known as eguares,
+              among the aboriginal peoples they encountered.
+            </p>
 
-          <p className="mb-5">
-            There are 35 established kingdoms in Esanland, including: Amahor,
-            Ebelle, Egoro, Ewohimi, Ekekhenlen, Ekpoma, Ekpon, Emu, Ewu, Ewato,
-            Ewosa, Idoa, Ifeku, Igueben, Ilushi, Inyelen, Irrua, Ogwa, Ohordua,
-            Okalo, Okhuesan, Onogholo, Opoji, Oria, Orowa, Uromi, Udo, Ugbegun,
-            Ugboha, Ubiaja, Urohi, Ugun, Ujiogba, Ukhun, Uzea.
-          </p>
-          <button
-            onClick={linkToEsanHeritage}
-            className="bg-sharp-red w-full rounded-full p-1 text-white hover:text-light-blue my-2"
-          >
-            Read more
-          </button>
+            <p className="mb-5">
+              There are 35 established kingdoms in Esanland, including: Amahor,
+              Ebelle, Egoro, Ewohimi, Ekekhenlen, Ekpoma, Ekpon, Emu, Ewu,
+              Ewato, Ewosa, Idoa, Ifeku, Igueben, Ilushi, Inyelen, Irrua, Ogwa,
+              Ohordua, Okalo, Okhuesan, Onogholo, Opoji, Oria, Orowa, Uromi,
+              Udo, Ugbegun, Ugboha, Ubiaja, Urohi, Ugun, Ujiogba, Ukhun, Uzea.
+            </p>
+          </div>
+          <Button link={linkToEsanHeriate} text={text} />
         </div>
       </div>
     </div>
