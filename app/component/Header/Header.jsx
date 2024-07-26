@@ -21,7 +21,7 @@ function Header() {
         <Link href="/esanheritage" className="nav-list">
           Esan Heritage
         </Link>
-        <Link href="/" className="nav-list">
+        <Link href="/gallery" className="nav-list">
           Gallery
         </Link>
         <Link href="/contact" className="nav-list">
