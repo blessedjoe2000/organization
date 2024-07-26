@@ -1,11 +1,14 @@
 import React from "react";
-import bulldozer from "@/public/images/projects/ueobulldozer.jpg";
 import Image from "next/image";
 import Button from "../component/Button/Button";
+import bulldozer from "@/public/images/projects/ueobulldozer.jpg";
+import scholarship from "@/public/images/projects/ueo_scholarship.jpg";
+import Link from "next/link";
 
 export default function projects() {
   const donationLink = "https://donate.stripe.com/6oE8zx6Q0c3D7TO288";
   const donationText = "Click to Donate to Esan House Project Now";
+  const scholarshipText = "Click here to Donate to AAU Scholarship project Now";
   const target = "_blank";
   return (
     <div>
@@ -50,8 +53,75 @@ export default function projects() {
           </p>
         </div>
       </div>
+
       <div className="mx-5">
         <Button link={donationLink} text={donationText} target={target} />
+      </div>
+
+      <h2 className="mt-5">AAU Scholarship Project</h2>
+      <div className="flex flex-col lg:flex-row justify-center items-center gap-5 mx-5 mb-5">
+        <div className="w-full lg:w-1/2 bg-white p-5">
+          <p>
+            The United Esan Organization (UEO) is proud to announce the
+            provision of scholarship grant opportunities for students of Esan
+            origin attending Ambrose Alli University (AAU) in Ekpoma.
+            Recognizing the financial challenges that many students face, UEO is
+            committed to supporting the academic aspirations of Esan students
+            who are struggling to meet their educational expenses.
+          </p>
+          <p className="my-5">
+            To alleviate some of these financial burdens, UEO is offering a
+            scholarship grant of two hundred thousand naira (#200,000) to
+            qualified students. This initiative aims to empower Esan students by
+            providing them with the necessary financial assistance to continue
+            their education and achieve their academic goals.
+          </p>
+          <ul>
+            To qualify for the scholarship, applicants must meet the following
+            criteria:
+            <li>
+              <strong>Esan Origin: </strong> Applicants must be of Esan origin.
+            </li>
+            <li>
+              <strong>AAU Enrollment: </strong> Applicants must be bona fide
+              students of Ambrose Alli University (AAU), Ekpoma.
+            </li>
+            <li>
+              <strong>Application Form: </strong>{" "}
+              <Link
+                href="/files/UEO-Scholarship-Application-Form.pdf"
+                target="_blank"
+                className="text-sharp-red hover:text-light-blue"
+              >
+                Click here
+              </Link>{" "}
+              to download the scholarship application form. Fill it completely
+              and email it to info@unitedesanorganizationhouston.org
+            </li>
+            <li>
+              <strong>Essay Submission: </strong> Applicants must write an essay
+              demonstrating their financial struggles with their academic
+              expenses.
+            </li>
+          </ul>
+
+          <p className="mt-5">
+            This scholarship grant is part of UEO&apos;s ongoing commitment to
+            fostering education and economic empowerment within the Esan
+            community.
+          </p>
+        </div>
+        <div className="w-full lg:w-1/2">
+          <Image
+            src={scholarship}
+            alt="bulldozer in a construction site"
+            height={400}
+            className="w-full"
+          />
+        </div>
+      </div>
+      <div className="mx-5">
+        <Button link={donationLink} text={scholarshipText} target={target} />
       </div>
     </div>
   );

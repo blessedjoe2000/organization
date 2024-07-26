@@ -10,13 +10,13 @@ export default function Footer() {
           <SocialMedia />
         </div>
         <div className="flex flex-col gap-2">
+          <Link href="/">Home</Link>
           <Link href="/about">About Us</Link>
-          <Link href="/projects">Projects</Link>
           <Link href="/contact">Contact Us</Link>
         </div>
         <div className="flex flex-col gap-2">
+          <Link href="/projects">Projects</Link>
           <Link href="/executives">Executives</Link>
-          <Link href="/">Gallery</Link>
           <Link href="/esanheritage">Esan Heritage</Link>
         </div>
         <div>
