@@ -26,8 +26,8 @@ export default function Brief() {
           services, aiming to uplift and improve the quality of life for the
           Esan community.
         </p>
-        <br />
-        <p>
+
+        <p className="py-5">
           The vision of U.E.O is to establish a comprehensive community center
           that will serve as a hub for various services and activities. This
           center will provide essential health and wellness information, welfare
@@ -37,7 +37,7 @@ export default function Brief() {
           center will feature a library, creating a space for learning and
           cultural enrichment.
         </p>
-        <br />
+
         <p>
           Through these initiatives, U.E.O seeks to create a cohesive and
           empowered community, both in Houston and in Esan land, fostering a

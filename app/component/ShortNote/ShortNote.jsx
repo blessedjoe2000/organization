@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
 import project from "@/public/images/projects/ueo_project3.png";
 import esanpeople from "@/public/images/projects/ueo_project4.png";
 import "aos/dist/aos.css";

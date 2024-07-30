@@ -1,3 +1,5 @@
-export default function page() {
-  return <div>Gallery</div>;
+import React from "react";
+
+export default function Gallery() {
+  return <div>Galley</div>;
 }

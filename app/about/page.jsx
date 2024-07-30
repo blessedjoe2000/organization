@@ -4,11 +4,11 @@ import Button from "../component/Button/Button";
 
 export default function about() {
   const constitutionLink = "/";
-  const constitutionText = "Click here to download UEO Constitution";
+  const constitutionText = "Click here to view UEO Constitution";
   const target = "_blank";
   const dueLink = "https://buy.stripe.com/6oEcPNcak5Ffb60cMN";
   const dueText = "Click here to pay UEO monthly due";
-  const benefitText = "Click here to download UEO Benefits";
+  const benefitText = "Click here to view UEO Benefits";
   const benefitLink = "/";
 
   return (

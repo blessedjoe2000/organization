@@ -10,7 +10,7 @@ export default function esanheritage() {
       <VideoHeader />
       <div>
         <h2 className="mt-5"> Esan People and Culture</h2>
-        <div className=" bg-white p-5 ">
+        <div className=" bg-white p-5">
           <p>
             The Esan people and culture of Esanland are generally homogenous.
             Esanland (Esan: Otọesan), otherwise known as Esan Nation, is a
@@ -27,7 +27,7 @@ export default function esanheritage() {
             aspect of their cultural heritage.
           </p>
 
-          <p className="">
+          <p>
             There are 35 established kingdoms in Esanland, including: Amahor,
             Ebelle, Egoro, Ewohimi, Ekekhenlen, Ekpoma, Ekpon, Emu, Ewu, Ewato,
             Ewosa, Idoa, Ifeku, Igueben, Ilushi, Inyelen, Irrua, Ogwa, Ohordua,

@@ -3,7 +3,7 @@ import SocialMedia from "../SocialMedia/SocialMedia";
 
 export default function Footer() {
   return (
-    <div className=" font-semi-bold bg-black text-white ">
+    <div className="font-semi-bold bg-black text-white ">
       <div className="flex justify-between items-center p-20 gap-5">
         <div>
           <h2>Social Links</h2>

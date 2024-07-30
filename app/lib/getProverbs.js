@@ -51,7 +51,7 @@ export function getProverbs() {
         "Aah ii di isira ọnọ khin eni khin ẹkpẹn. Or, Aah ii khin ẹkpẹn man ọnọ khin eni.",
       englishProverb: "English proverb - meaning:",
       englishValue:
-        "You don’t change to a tiger in the presence of one who can change to an elephant.",
+        "You don't change to a tiger in the presence of one who can change to an elephant.",
     },
     {
       esanProverb: "Esan adage - itanh:",
@@ -76,13 +76,13 @@ export function getProverbs() {
     },
     {
       esanProverb: "Esan adage - itanh:",
-      value: "U’u ii ji Aah gui na.",
+      value: "U'u ii ji Aah gui na.",
       englishProverb: "English proverb - meaning:",
       englishValue: "Death is impervious to appeal.",
     },
     {
       esanProverb: "Esan adage - itanh:",
-      value: "Ẹwa’ẹn Aah rẹ gbi efẹn nọ ribhi ẹkẹ akhe.",
+      value: "Ẹwa'ẹn Aah rẹ gbi efẹn nọ ribhi ẹkẹ akhe.",
       englishProverb: "English proverb - meaning:",
       englishValue:
         "Killing a rat that is holed up inside an earthen pot requires wisdom.",
@@ -92,7 +92,7 @@ export function getProverbs() {
       value: "Ufẹmhẹn si obhokhan kha na, Aah ki yọ owualẹn kkani ọhle ni ọle.",
       englishProverb: "English proverb - meaning:",
       englishValue:
-        "When the arrow from a child’s bow travels far, an adult is suspected to be responsible.",
+        "When the arrow from a child's bow travels far, an adult is suspected to be responsible.",
     },
     {
       esanProverb: "Esan adage - itanh:",
@@ -112,7 +112,7 @@ export function getProverbs() {
       value: "Ohu bha lẹn ebialẹn si ọhle.",
       englishProverb: "English proverb - meaning:",
       englishValue:
-        "Fury does not know its owner’s strength otherwise a weakling’s rage would be tempered with restraint.",
+        "Fury does not know its owner's strength otherwise a weakling’s rage would be tempered with restraint.",
     },
     {
       esanProverb: "Esan adage - itanh:",
@@ -151,7 +151,7 @@ export function getProverbs() {
     },
     {
       esanProverb: "Esan adage - itanh:",
-      value: "Aah kuẹ ri ikhilẹn khin ẹgua’e ọba, ọba kuẹ nyẹn uge.",
+      value: "Aah kuẹ ri ikhilẹn khin ẹgua'e ọba, ọba kuẹ nyẹn uge.",
       englishProverb: "English proverb - meaning:",
       englishValue:
         "The king need not tiptoe in order to peep at a dance coming to be staged at his palace.",
@@ -161,7 +161,7 @@ export function getProverbs() {
       value: "Ọni Aah bbhobholo ii bhobhi ọrhia.",
       englishProverb: "English proverb - meaning:",
       englishValue:
-        "The one who is carried on one’s back cannot back someone else.",
+        "The one who is carried on one's back cannot back someone else.",
     },
     {
       esanProverb: "Esan adage - itanh:",
@@ -221,7 +221,7 @@ export function getProverbs() {
       esanProverb: "Esan adage - itanh:",
       value: "Uhọmhọn na ji ikọ ọ’ ii gbi ikọ.",
       englishProverb: "English proverb - meaning:",
-      englishValue: "An envoy isn’t punished for the message he conveys.",
+      englishValue: "An envoy isn't punished for the message he conveys.",
     },
     {
       esanProverb: "Esan adage - itanh:",
@@ -232,7 +232,7 @@ export function getProverbs() {
     },
     {
       esanProverb: "Esan adage - itanh:",
-      value: "Aah kha rui ẹlo, Aah ki kha ri ẹwua’ẹn khian.",
+      value: "Aah kha rui ẹlo, Aah ki kha ri ẹwua'ẹn khian.",
       englishProverb: "English proverb - meaning:",
       englishValue:
         "Blindness demands caution. Or, When one is blind, one learns to walk with care.",
@@ -264,7 +264,7 @@ export function getProverbs() {
       value: "Ọ’ ii yi ọta ni ekhẹnh ta yi ẹki, ọ’ ii yi ọhle ele ta vae.",
       englishProverb: "English proverb - meaning:",
       englishValue:
-        "Traders’ subject of discussion to the market differs from their homeward discussion.",
+        "Traders' subject of discussion to the market differs from their homeward discussion.",
     },
     {
       esanProverb: "Esan adage - itanh:",
@@ -277,7 +277,7 @@ export function getProverbs() {
       esanProverb: "Esan adage - itanh:",
       value: "Eji Aah tan sẹ, ọhle Aah da ji uhọmhọn.",
       englishProverb: "English proverb - meaning:",
-      englishValue: "A person’s head must grow where his height stops.",
+      englishValue: "A person's head must grow where his height stops.",
     },
     {
       esanProverb: "Esan adage - itanh:",

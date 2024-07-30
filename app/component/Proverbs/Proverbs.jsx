@@ -28,7 +28,7 @@ export default function Proverbs({ initialProverb }) {
     <div className="bg-black text-white p-28 text-center my-10">
       <div className="flex justify-center items-center gap-2 font-semibold text-2xl ">
         <h3 className="font-protestRevolution">{currentProverb.esanProverb}</h3>
-        <div className="font-aclonica ">
+        <div className="font-aclonica">
           <blockquote>
             <q>{currentProverb.value}</q>
           </blockquote>
@@ -46,7 +46,7 @@ export default function Proverbs({ initialProverb }) {
         </div>
       </div>
       <div>
-        <div className=" text-center text-lg">
+        <div className="text-center text-lg">
           <p> {author}</p>
           <p className="text-gray-400">Author</p>
         </div>

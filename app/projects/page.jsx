@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import Button from "../component/Button/Button";
 import bulldozer from "@/public/images/projects/ueobulldozer.jpg";

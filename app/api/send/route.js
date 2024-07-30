@@ -5,11 +5,11 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export async function POST(req) {
   try {
     const body = await req.json();
-    const ourEmail = "info@ueohouston.org";
+    const ourEmail = "info@unitedesanorganizationhouston.org";
     const { firstName, lastName, email, mobile, message } = body;
 
     const formData = await resend.emails.send({
-      from: "United Esan Organization <info@ueohouston.org>",
+      from: "United Esan Organization <info@unitedesanorganizationhouston.org>",
       to: [ourEmail],
       subject: "Contact us message",
       react: EmailTemplate({

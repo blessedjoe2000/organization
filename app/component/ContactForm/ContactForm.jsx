@@ -81,10 +81,10 @@ export default function ContactForm() {
     });
 
     if (response.status === 200) {
-      setFirstName(""), setLastName("");
-      setEmail("");
-      setMobile("");
-      setMessage("");
+      setFirstName(" "), setLastName(" ");
+      setEmail(" ");
+      setMobile(" ");
+      setMessage(" ");
       toast.success(`Hi ${firstName}, message sent successfully`, {
         style: {
           border: "1px solid #01B700",

@@ -18,10 +18,8 @@ module.exports = {
 
       colors: {
         "light-blue": "#3FA2F6",
-        orange: "#FF7F3E",
         offwhite: "#FCF8F3",
         "sharp-red": "#E4003A",
-        wine: "#73201C",
       },
     },
   },

@@ -3,7 +3,7 @@ import Logo from "../Logo/Logo";
 
 function Header() {
   return (
-    <div className="flex justify-between items-center gap-5 px-10 py-2 text-sharp-red bg-white">
+    <div className=" flex justify-between items-center gap-5 px-10 py-2 text-sharp-red bg-white">
       <Logo />
       <div className="flex justify-between items-center lg:gap-20 md:gap-10 sm:gap-5">
         <Link href="/" className="nav-list">

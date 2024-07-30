@@ -6,7 +6,7 @@ export default function Logo() {
   return (
     <div>
       <Link href="/">
-        <Image src={logo} alt="UEO logo" width={70} height={50} />
+        <Image src={logo} alt="UEO logo" width={70} height={60} />
       </Link>
     </div>
   );

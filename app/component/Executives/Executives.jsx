@@ -11,7 +11,7 @@ export default function Executives() {
             src={president}
             alt="ueo president"
             width={300}
-            height={300}
+            height={200}
             className="rounded-full"
           />
           <div className="text-center text-lg">
@@ -24,7 +24,7 @@ export default function Executives() {
             src={president}
             alt="ueo vice president"
             width={300}
-            height={300}
+            height={200}
             className="rounded-full"
           />
           <div className="text-center text-lg">
@@ -37,7 +37,7 @@ export default function Executives() {
             src={president}
             alt="ueo genera secretary"
             width={300}
-            height={300}
+            height={200}
             className="rounded-full"
           />
           <div className="text-center text-lg">
@@ -50,7 +50,7 @@ export default function Executives() {
             src={president}
             alt="ueo treasurer"
             width={300}
-            height={300}
+            height={200}
             className="rounded-full"
           />
           <div className="text-center text-lg">
@@ -63,7 +63,7 @@ export default function Executives() {
             src={president}
             alt="ueo financial secretary"
             width={300}
-            height={300}
+            height={200}
             className="rounded-full"
           />
           <div className="text-center text-lg">
@@ -76,7 +76,7 @@ export default function Executives() {
             src={president}
             alt="ueo pro"
             width={300}
-            height={300}
+            height={200}
             className="rounded-full"
           />
           <div className="text-center text-lg">

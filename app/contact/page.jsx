@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 export default function Contact() {
   return (
     <div>
-      <h2 className=" mt-5">Contact Us</h2>
+      <h2 className="mt-5">Contact Us</h2>
       <ContactForm />
       <div className="sm:flex justify-around items-center gap-5 py-5 bg-white m-5">
         <div
