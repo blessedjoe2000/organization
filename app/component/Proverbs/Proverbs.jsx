@@ -20,9 +20,6 @@ export default function Proverbs({ initialProverb }) {
     return () => clearInterval(interval);
   }, [proverbs]);
 
-  console.log("initial Proverb in client :>> ", initialProverb);
-  console.log("currentProverb in client :>> ", currentProverb);
-
   if (!currentProverb) {
     return <div>Loading...</div>;
   }
@@ -31,17 +28,25 @@ export default function Proverbs({ initialProverb }) {
     <div className="bg-black text-white p-28 text-center my-10">
       <div className="flex justify-center items-center gap-2 font-semibold text-2xl ">
         <h3 className="font-protestRevolution">{currentProverb.esanProverb}</h3>
-        <p className="font-aclonica ">"{currentProverb.value}"</p>
+        <div className="font-aclonica">
+          <blockquote>
+            <q>{currentProverb.value}</q>
+          </blockquote>
+        </div>
       </div>
 
       <div className="flex justify-center items-center gap-2 font-semibold text-2xl mb-20 mt-10">
         <h3 className="font-protestRevolution">
           {currentProverb.englishProverb}
         </h3>
-        <p className="font-aclonica">"{currentProverb.englishValue}"</p>
+        <div className="font-aclonica">
+          <blockquote>
+            <q>{currentProverb.englishValue}</q>
+          </blockquote>
+        </div>
       </div>
       <div>
-        <div className=" text-center text-lg">
+        <div className="text-center text-lg">
           <p> {author}</p>
           <p className="text-gray-400">Author</p>
         </div>

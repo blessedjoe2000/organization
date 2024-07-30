@@ -9,7 +9,7 @@ export default function Home() {
   const proverbs = getProverbs();
   const initialProverb = getRandomProverb(proverbs);
   return (
-    <main className="">
+    <main>
       <FlashAlert />
       <Slider />
       <Brief />

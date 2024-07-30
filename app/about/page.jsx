@@ -1,10 +1,19 @@
 import "aos/dist/aos.css";
 import Link from "next/link";
+import Button from "../component/Button/Button";
 
 export default function about() {
+  const constitutionLink = "/";
+  const constitutionText = "Click here to view UEO Constitution";
+  const target = "_blank";
+  const dueLink = "https://buy.stripe.com/6oEcPNcak5Ffb60cMN";
+  const dueText = "Click here to pay UEO monthly due";
+  const benefitText = "Click here to view UEO Benefits";
+  const benefitLink = "/";
+
   return (
     <div>
-      <div className="my-5 p-5 bg-white">
+      <div className="m-5 p-5 bg-white">
         <h2>Background History</h2>
         <p>
           The United Esan Organization (UEO) in Houston, Texas has a rich
@@ -62,6 +71,34 @@ export default function about() {
           </p>
         </div>
       </div>
+      <div className="m-5">
+        <Button
+          link={constitutionLink}
+          text={constitutionText}
+          target={target}
+        />
+      </div>
+      <div className="bg-white my-5 p-5">
+        <h2>Our Meeting</h2>
+        <p>
+          We gather in person once every month, specifically on the second
+          Sunday of each month. These meetings provide an excellent opportunity
+          for members to connect, share ideas, and celebrate our rich Esan
+          heritage together. To support our activities and initiatives, we pay a
+          monthly due of $30.
+        </p>
+        <p className="pt-5">
+          For the exact meeting location, please visit our{" "}
+          <Link href="/contact" className=" hover:text-sharp-red">
+            <q>Contact Us</q>
+          </Link>{" "}
+          page where you will find the address and other relevant details. We
+          look forward to seeing you there!
+        </p>
+      </div>
+      <div className="m-5">
+        <Button link={dueLink} text={dueText} target={target} />
+      </div>
       <div className="bg-white p-5 text-center">
         <h2>Become a member</h2>
         <p>
@@ -78,7 +115,7 @@ export default function about() {
             <Link
               href="/files/UEO-REG-FORM.pdf"
               target="_blank"
-              className="px-2 py-1 bg-light-blue text-white rounded-md"
+              className="px-2 py-1 bg-light-blue text-white rounded-md hover:text-sharp-red"
             >
               here
             </Link>{" "}
@@ -88,9 +125,9 @@ export default function about() {
             <strong>Pay the Registration Fee:</strong> A registration fee of
             twenty-five dollars ($25) is required. Click to{" "}
             <Link
-              href="/"
+              href="https://buy.stripe.com/9AQ8zx0rCaZzb60cMO"
               target="_blank"
-              className="px-2 py-1 bg-sharp-red text-white rounded-md"
+              className="px-2 py-1 bg-sharp-red text-white rounded-md hover:text-light-blue"
             >
               pay
             </Link>
@@ -106,6 +143,9 @@ export default function about() {
           our growing family. Your involvement will help us continue to
           celebrate and preserve the rich Esan culture and heritage.
         </p>
+      </div>
+      <div className="m-5">
+        <Button link={benefitLink} text={benefitText} target={target} />
       </div>
     </div>
   );

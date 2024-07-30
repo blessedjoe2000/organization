@@ -3,28 +3,29 @@ import SocialMedia from "../SocialMedia/SocialMedia";
 
 export default function Footer() {
   return (
-    <div className=" font-semi-bold bg-black text-white ">
+    <div className="font-semi-bold bg-black text-white ">
       <div className="flex justify-between items-center p-20 gap-5">
         <div>
-          <h2>Social</h2>
+          <h2>Social Links</h2>
           <SocialMedia />
         </div>
         <div className="flex flex-col gap-2">
+          <Link href="/">Home</Link>
           <Link href="/about">About Us</Link>
-          <Link href="/projects">Projects</Link>
-          <Link href="/">Contact Us</Link>
+          <Link href="/contact">Contact Us</Link>
         </div>
         <div className="flex flex-col gap-2">
-          <Link href="/">Executives</Link>
-          <Link href="/">Gallery</Link>
-          <Link href="/">Esan Heritage</Link>
+          <Link href="/projects">Projects</Link>
+          <Link href="/executives">Executives</Link>
+          <Link href="/esanheritage">Esan Heritage</Link>
         </div>
         <div>
           <Link
-            href="/"
+            href="https://donate.stripe.com/6oE8zx6Q0c3D7TO288"
+            target="_blank"
             className="flex justify-center items-center gap-0.5 hover:text-light-blue hover:underline px-3 py-1 bg-sharp-red rounded-xl text-white font-semibold"
           >
-            <p>DONATE</p>
+            <button>DONATE</button>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
