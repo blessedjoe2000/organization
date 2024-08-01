@@ -42,7 +42,7 @@ export default function about() {
         </p>
       </div>
       <div className="sm:flex justify-center items-center gap-1 my-5 p-5 ">
-        <div className="shadow-md rounded-md p-5 bg-white ">
+        <div className="shadow-md rounded-md p-5 bg-white sm:mb-0 mb-2">
           <h2>Our Vision</h2>
           <p>
             The vision of the United Esan Organization (U.E.O) in Houston, Texas
