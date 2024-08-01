@@ -12,7 +12,7 @@ function Header() {
   };
 
   return (
-    <nav className="text-sharp-red bg-white">
+    <nav className="text-sharp-red bg-white md:sticky md:top-0 z-10">
       <div
         className={
           showHamburger
