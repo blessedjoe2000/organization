@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function projects() {
   const donationLink = "https://donate.stripe.com/6oE8zx6Q0c3D7TO288";
   const donationText = "Click to Donate to Esan House Project Now";
-  const scholarshipText = "Click here to Donate to AAU Scholarship project Now";
+  const scholarshipText = "Click to Donate to AAU Scholarship project";
   const target = "_blank";
   return (
     <div>

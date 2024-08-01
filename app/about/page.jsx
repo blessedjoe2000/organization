@@ -41,7 +41,7 @@ export default function about() {
           belonging and unity among its members.
         </p>
       </div>
-      <div className="flex justify-center items-center gap-1 my-5 p-5 ">
+      <div className="sm:flex justify-center items-center gap-1 my-5 p-5 ">
         <div className="shadow-md rounded-md p-5 bg-white ">
           <h2>Our Vision</h2>
           <p>

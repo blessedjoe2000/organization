@@ -3,18 +3,18 @@ import SocialMedia from "../SocialMedia/SocialMedia";
 
 export default function Footer() {
   return (
-    <div className="font-semi-bold bg-black text-white ">
-      <div className="flex justify-between items-center p-20 gap-5">
-        <div>
+    <div className="font-semi-bold bg-black text-white text-center">
+      <div className="sm:flex justify-between items-center sm:p-20 p-10 gap-5">
+        <div className="flex flex-col justify-center items-center">
           <h2>Social Links</h2>
           <SocialMedia />
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 py-10 sm:py-0">
           <Link href="/">Home</Link>
           <Link href="/about">About Us</Link>
           <Link href="/contact">Contact Us</Link>
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 pb-10 sm:pb-0">
           <Link href="/projects">Projects</Link>
           <Link href="/executives">Executives</Link>
           <Link href="/esanheritage">Esan Heritage</Link>
