@@ -97,7 +97,7 @@ export default function Gallery() {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="size-6 bg-offwhite rounded-full "
+                className="size-6 bg-offwhite text-sharp-red rounded-full "
               >
                 <path
                   strokeLinecap="round"
@@ -126,7 +126,7 @@ export default function Gallery() {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="size-6 bg-offwhite rounded-full"
+                className="size-6 bg-offwhite text-sharp-red rounded-full"
               >
                 <path
                   strokeLinecap="round"
