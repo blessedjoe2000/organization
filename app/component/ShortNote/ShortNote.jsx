@@ -12,9 +12,9 @@ export default function ShortNote() {
   const text = "Read more";
 
   return (
-    <div className="sm:flex justify-center items-center gap-1">
+    <div className="sm:flex justify-center items-center gap-1 mx-5">
       <div
-        className="image-container p-5 mb-5 shadow-md rounded-md ml-2"
+        className="image-container p-5 sm:mb-5 mb-2 shadow-md rounded-md "
         data-aos="fade-up"
       >
         <h2>Our Projects</h2>
@@ -52,7 +52,7 @@ export default function ShortNote() {
         </div>
       </div>
       <div
-        className="image-container p-5 shadow-md rounded-md mb-5 mr-2"
+        className="image-container p-5 shadow-md rounded-md mb-5 "
         data-aos="fade-up"
       >
         <h2>Esan People and Culture</h2>
