@@ -57,7 +57,7 @@ export default function Contact() {
           </div>
         </div>
         <div
-          className="flex flex-col justify-center text-center gap-2 sm:mt-0 mt-5"
+          className="flex flex-col justify-center items-center text-center gap-2 sm:mt-0 mt-5"
           data-aos="fade-left"
         >
           <h3>Mailing Address</h3>

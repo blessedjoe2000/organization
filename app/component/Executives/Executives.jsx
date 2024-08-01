@@ -5,7 +5,7 @@ export default function Executives() {
   return (
     <div className="p-5 ">
       <h2>UEO Current Executives</h2>
-      <div className="grid grid-cols-3">
+      <div className="grid sm:grid-cols-3">
         <div className="bg-white flex flex-col justify-center items-center gap-2 p-5 shadow-md m-1">
           <Image
             src={president}
