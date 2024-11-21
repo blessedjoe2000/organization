@@ -1,143 +1,107 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
-
-const images = [
-  "/images/sliders/ueo_slider1.jpg",
-  "/images/sliders/ueo_slider2.jpg",
-  "/images/sliders/ueo_slider3.jpg",
-  "/images/sliders/ueo_slider4.jpg",
-  "/images/sliders/ueo_slider5.jpg",
-  "/images/sliders/ueo_slider6.jpg",
-  "/images/sliders/ueo_slider1.jpg",
-  "/images/sliders/ueo_slider2.jpg",
-  "/images/sliders/ueo_slider3.jpg",
-  "/images/sliders/ueo_slider4.jpg",
-  "/images/sliders/ueo_slider5.jpg",
-  "/images/sliders/ueo_slider6.jpg",
-  "/images/sliders/ueo_slider1.jpg",
-  "/images/sliders/ueo_slider2.jpg",
-  "/images/sliders/ueo_slider3.jpg",
-  "/images/sliders/ueo_slider4.jpg",
-  "/images/sliders/ueo_slider5.jpg",
-  "/images/sliders/ueo_slider6.jpg",
-];
+import Link from "next/link";
 
 export default function Gallery() {
-  const [selectedImageIndex, setSelectedImageIndex] = useState(null);
-
-  const handleKeyDown = (e) => {
-    if (e.key === "Escape") {
-      setSelectedImageIndex(null);
-    } else if (e.key === "ArrowRight") {
-      nextImage();
-    } else if (e.key === "ArrowLeft") {
-      prevImage();
-    }
-  };
-
-  useEffect(() => {
-    if (selectedImageIndex !== null) {
-      window.addEventListener("keydown", handleKeyDown);
-    } else {
-      window.removeEventListener("keydown", handleKeyDown);
-    }
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-    };
-  }, [selectedImageIndex]);
-
-  const nextImage = () => {
-    if (selectedImageIndex !== null) {
-      setSelectedImageIndex((selectedImageIndex + 1) % images.length);
-    }
-  };
-
-  const prevImage = () => {
-    if (selectedImageIndex !== null) {
-      setSelectedImageIndex(
-        (selectedImageIndex - 1 + images.length) % images.length
-      );
-    }
-  };
+  const christmas2022 =
+    "https://unitedesanorganization1.s3.us-west-1.amazonaws.com/ueo13.jpg";
+  const christmas2023 =
+    "https://unitedesanorganization1.s3.us-west-1.amazonaws.com/christmasparty2023/ueo10.jpg";
+  const picnic2023 =
+    "https://unitedesanorganization1.s3.us-west-1.amazonaws.com/ueo13.jpg";
 
   return (
     <div className="min-h-screen p-5">
-      <h2 className=" ">Image Gallery</h2>
+      <h2 className=" ">Photo Gallery</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1">
-        {images.map((url, index) => (
-          <Image
-            key={index}
-            src={url}
-            width={500}
-            height={300}
-            alt={`Gallery image ${index + 1}`}
-            className="w-full h-auto cursor-pointer"
-            onClick={() => setSelectedImageIndex(index)}
-          />
-        ))}
-      </div>
-      {selectedImageIndex !== null && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
-          onClick={() => setSelectedImageIndex(null)}
-        >
-          <div className="relative">
-            <button
-              className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-transparent p-2"
-              onClick={(e) => {
-                e.stopPropagation();
-                prevImage();
-              }}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="size-6 bg-offwhite text-sharp-red rounded-full "
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M15.75 19.5 8.25 12l7.5-7.5"
-                />
-              </svg>
-            </button>
+        <div>
+          <Link href="/christmasparty2023">
             <Image
-              src={images[selectedImageIndex]}
-              alt="Selected"
-              height={400}
-              width={900}
-              onClick={(e) => e.stopPropagation()}
+              src={christmas2022}
+              width={500}
+              height={200}
+              alt={`Christmas party photos`}
+              className="w-full h-auto cursor-pointer"
             />
-            <button
-              className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-transparent p-2"
-              onClick={(e) => {
-                e.stopPropagation();
-                nextImage();
-              }}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="size-6 bg-offwhite text-sharp-red rounded-full"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
-                />
-              </svg>
-            </button>
-          </div>
+            <p className="text-center text-transform: uppercase text-sharp-red hover:text-light-blue text-2xl">
+              Christmas party 2021
+            </p>
+          </Link>
         </div>
-      )}
+
+        <div>
+          <Link href="/christmasparty2023">
+            <Image
+              src={picnic2023}
+              width={500}
+              height={200}
+              alt={`Christmas party photos`}
+              className="w-full h-auto cursor-pointer"
+            />
+            <p className="text-center text-transform: uppercase text-sharp-red hover:text-light-blue text-2xl">
+              Picnic 2022
+            </p>
+          </Link>
+        </div>
+        <div>
+          <Link href="/christmasparty2023">
+            <Image
+              src={christmas2023}
+              width={500}
+              height={200}
+              alt={`Christmas party photos`}
+              className="w-full h-auto cursor-pointer"
+            />
+            <p className="text-center text-transform: uppercase text-sharp-red hover:text-light-blue text-2xl">
+              Christmas party 2022
+            </p>
+          </Link>
+        </div>
+        <div>
+          <Link href="/christmasparty2023">
+            <Image
+              src={christmas2022}
+              width={500}
+              height={200}
+              alt={`Christmas party photos`}
+              className="w-full h-auto cursor-pointer"
+            />
+            <p className="text-center text-transform: uppercase text-sharp-red hover:text-light-blue text-2xl">
+              Picnic 2023
+            </p>
+          </Link>
+        </div>
+
+        <div>
+          <Link href="/christmasparty2023">
+            <Image
+              src={picnic2023}
+              width={500}
+              height={200}
+              alt={`Christmas party photos`}
+              className="w-full h-auto cursor-pointer"
+            />
+            <p className="text-center text-transform: uppercase text-sharp-red hover:text-light-blue text-2xl">
+              Christmas Party 2023
+            </p>
+          </Link>
+        </div>
+        <div>
+          <Link href="/christmasparty2023">
+            <Image
+              src={christmas2023}
+              width={500}
+              height={200}
+              alt={`Christmas party photos`}
+              className="w-full h-auto cursor-pointer"
+            />
+            <p className="text-center text-transform: uppercase text-sharp-red hover:text-light-blue text-2xl">
+              Esan World Congress 2024
+            </p>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }
