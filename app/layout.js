@@ -3,6 +3,7 @@ import Header from "./component/Header/Header";
 import Footer from "./component/Footer/Footer";
 import { Toaster } from "react-hot-toast";
 import FlashAlert from "./component/FlashAlert/FlashAlert";
+import { ThemeProvider } from "@mui/system";
 
 export const metadata = {
   title: "United Esan Organization App",
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className="bg-offwhite">
       <body className="">
         <Toaster position="top-right" />
+        <ThemeProvider/>
         <Header />
         <FlashAlert/>
         {children}
