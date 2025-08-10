@@ -3,6 +3,7 @@ import Button from "../component/Button/Button";
 import bulldozer from "@/public/images/projects/ueobulldozer.jpg";
 import scholarship from "@/public/images/projects/ueo_scholarship.jpg";
 import Link from "next/link";
+import { Container } from "@mui/material";
 
 export default function projects() {
   const donationLink = "https://donate.stripe.com/6oE8zx6Q0c3D7TO288";
@@ -10,7 +11,7 @@ export default function projects() {
   const scholarshipText = "Click to Donate to AAU Scholarship project";
   const target = "_blank";
   return (
-    <div>
+    <Container>
       <h2 className="mt-5">Esan House Project</h2>
       <div className="flex flex-col lg:flex-row justify-center items-center gap-5 mx-5 mb-5">
         <div className="w-full lg:w-1/2">
@@ -57,7 +58,7 @@ export default function projects() {
         <Button link={donationLink} text={donationText} target={target} />
       </div>
 
-      <h2 className="mt-5">AAU Scholarship Project</h2>
+      <h2 className="mt-20">AAU Scholarship Project</h2>
       <div className="flex flex-col lg:flex-row justify-center items-center gap-5 mx-5 mb-5">
         <div className="w-full lg:w-1/2 bg-white p-5">
           <p>
@@ -119,9 +120,9 @@ export default function projects() {
           />
         </div>
       </div>
-      <div className="mx-5">
+      <div className="mx-5 mb-20">
         <Button link={donationLink} text={scholarshipText} target={target} />
       </div>
-    </div>
+    </Container>
   );
 }
