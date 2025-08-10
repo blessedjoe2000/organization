@@ -11,7 +11,6 @@ export default function Home() {
   const initialProverb = getRandomProverb(proverbs);
   return (
     <main>
-      <FlashAlert />
       <Container>
       <Slider />
       <Brief />

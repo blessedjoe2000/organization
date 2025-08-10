@@ -2,6 +2,7 @@ import "./globals.css";
 import Header from "./component/Header/Header";
 import Footer from "./component/Footer/Footer";
 import { Toaster } from "react-hot-toast";
+import FlashAlert from "./component/FlashAlert/FlashAlert";
 
 export const metadata = {
   title: "United Esan Organization App",
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
       <body className="">
         <Toaster position="top-right" />
         <Header />
+        <FlashAlert/>
         {children}
         <Footer />
       </body>
