@@ -1,6 +1,7 @@
 import "aos/dist/aos.css";
 import Link from "next/link";
 import Button from "../component/Button/Button";
+import { Container } from "@mui/material";
 
 export default function about() {
   const constitutionLink = "/";
@@ -12,7 +13,7 @@ export default function about() {
   const benefitLink = "/";
 
   return (
-    <div>
+    <Container>
       <div className="m-5 p-5 bg-white">
         <h2>Background History</h2>
         <p>
@@ -71,14 +72,8 @@ export default function about() {
           </p>
         </div>
       </div>
-      <div className="m-5">
-        <Button
-          link={constitutionLink}
-          text={constitutionText}
-          target={target}
-        />
-      </div>
-      <div className="bg-white my-5 p-5">
+      
+      <div className="bg-white my-10 p-5">
         <h2>Our Meeting</h2>
         <p>
           We gather in person once every month, specifically on the second
@@ -95,11 +90,12 @@ export default function about() {
           page where you will find the address and other relevant details. We
           look forward to seeing you there!
         </p>
-      </div>
-      <div className="m-5">
+        <div className="">
         <Button link={dueLink} text={dueText} target={target} />
       </div>
-      <div className="bg-white p-5 text-center">
+      </div>
+      
+      <div className="bg-white p-5 text-center my-20">
         <h2>Become a member</h2>
         <p>
           We are delighted to welcome you to the United Esan Organization! As a
@@ -143,10 +139,15 @@ export default function about() {
           our growing family. Your involvement will help us continue to
           celebrate and preserve the rich Esan culture and heritage.
         </p>
+        <div className="">
+        <Button
+          link={constitutionLink}
+          text={constitutionText}
+          target={target}
+        />
       </div>
-      <div className="m-5">
-        <Button link={benefitLink} text={benefitText} target={target} />
       </div>
-    </div>
+   
+    </Container>
   );
 }
