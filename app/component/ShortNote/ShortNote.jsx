@@ -12,7 +12,7 @@ export default function ShortNote() {
   const text = "Read more";
 
   return (
-    <div className="sm:flex justify-center items-center gap-1 mx-5">
+    <div className="sm:flex justify-center items-center gap-1 ">
       <div
         className="image-container p-5 sm:mb-5 mb-2 shadow-md rounded-md "
         data-aos="fade-up"

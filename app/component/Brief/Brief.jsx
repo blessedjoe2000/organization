@@ -13,9 +13,9 @@ export default function Brief() {
   });
 
   return (
-    <div className="  my-5">
+    <div className="my-5">
       <h2 className="">Summary of United Esan Organization Houston</h2>
-      <div className="bg-white p-5  text-lg m-5" data-aos="fade-up">
+      <div className="bg-white p-5  text-lg" >
         <p>
           The United Esan Organization (U.E.O) in Houston, Texas is committed to
           the preservation and promotion of Esan culture and heritage. The

@@ -4,12 +4,13 @@ import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 
 const slideImages = [
-  "/images/sliders/ueo_slider1.jpg",
-  "/images/sliders/ueo_slider2.jpg",
-  "/images/sliders/ueo_slider3.jpg",
-  "/images/sliders/ueo_slider4.jpg",
-  "/images/sliders/ueo_slider5.jpg",
-  "/images/sliders/ueo_slider6.jpg",
+  "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhig6BEeslzdBIL4Qb6WnpTeyVwfOl03iGv9P2x",
+  "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiQFPLjsqW3eF7GOrLaUD5iXkJoYfEhn2Sd8uv",
+  "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiZCZmWxoxdhKlTEWtMzO4eUb08VR3CnagoLFy",
+  "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiM3CmadH8wsP0WLeCc1TrinQImzBavHZJ4F7O",
+  "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhi5VbPhIN3gGKxRru9b6Jw2dIBOfPLvaQyHWqE",
+  "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiaL5gYhgZFXZ1C9tgNRPAhIUWK20ybd5QJBD7",
+  "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiND7rihOQ6lt0IyHEJ8j7mpqMf5UwzC2VhGDT",
 ];
 
 const properties = {
