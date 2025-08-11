@@ -3,12 +3,13 @@ import VideoHeader from "../component/VideoHeader/VideoHeader";
 import esanmap from "@/public/images/projects/esanlgamap.jpg";
 import LGATable from "../component/LGATable/LGATable";
 import Link from "next/link";
+import { Container } from "@mui/system";
 
 export default function esanheritage() {
   return (
     <div>
       <VideoHeader />
-      <div>
+
         <h2 className="mt-5"> Esan People and Culture</h2>
         <div className=" bg-white p-5">
           <p>
@@ -56,7 +57,8 @@ export default function esanheritage() {
             have however been made to return to status quo ante.
           </p>
         </div>
-      </div>
+
+
 
       <div
         className="flex flex-col lg:flex-row  justify-center items-center gap-5 bg-white mb-5 px-5 pb-5
@@ -87,6 +89,7 @@ export default function esanheritage() {
           </button>
         </Link>
       </div>
+
     </div>
   );
 }
