@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function BoardMembers() {
   return (
-    <div className="p-5 ">
+    <div className="pt-10 pb-20">
       <h2 className="">UEO Board Members</h2>
-      <div className="grid sm:grid-cols-3">
+      <div className="flex flex-wrap justify-center items-center">
         <div className="bg-white flex flex-col justify-center items-center gap-2 p-5 shadow-md m-1">
           <Image
             src={president}
@@ -35,7 +35,7 @@ export default function BoardMembers() {
         <div className="bg-white flex flex-col justify-center items-center gap-2 p-5 shadow-md m-1">
           <Image
             src={president}
-            alt="ueo genera secretary"
+            alt="ueo general secretary"
             width={300}
             height={200}
             className="rounded-full"
@@ -45,8 +45,6 @@ export default function BoardMembers() {
             <p className="text-gray-400">Member</p>
           </div>
         </div>
-      </div>
-      <div className="grid sm:grid-cols-2">
         <div className="bg-white flex flex-col justify-center items-center gap-2 p-5 shadow-md m-1">
           <Image
             src={president}
@@ -74,6 +72,7 @@ export default function BoardMembers() {
           </div>
         </div>
       </div>
+      <div className=""></div>
     </div>
   );
 }

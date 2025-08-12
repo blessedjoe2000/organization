@@ -32,9 +32,6 @@ function Header() {
             <Link href="/projects" className="nav-list">
               Projects
             </Link>
-            <Link href="/executives" className="nav-list">
-              Executives
-            </Link>
             <Link href="/esanheritage" className="nav-list">
               Esan Heritage
             </Link>
@@ -101,9 +98,6 @@ function Header() {
                 </Link>
                 <Link href="/projects" className="nav-list">
                   Projects
-                </Link>
-                <Link href="/executives" className="nav-list">
-                  Executives
                 </Link>
                 <Link href="/esanheritage" className="nav-list">
                   Esan Heritage

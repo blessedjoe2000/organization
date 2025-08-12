@@ -2,6 +2,8 @@ import "aos/dist/aos.css";
 import Link from "next/link";
 import Button from "../component/Button/Button";
 import { Container } from "@mui/material";
+import Executives from "../component/Executives/Executives";
+import BoardMembers from "../component/BoardMembers/BoardMembers";
 
 export default function about() {
   const constitutionLink = "/";
@@ -14,8 +16,8 @@ export default function about() {
 
   return (
     <Container>
-      <div className="m-5 p-5 bg-white">
-        <h2>Background History</h2>
+      <div className="my-5 p-5 bg-white">
+        <h2>About Us</h2>
         <p>
           The United Esan Organization (UEO) in Houston, Texas has a rich
           history spanning over 20 years. Founded in 1979, it has grown into a
@@ -42,7 +44,7 @@ export default function about() {
           belonging and unity among its members.
         </p>
       </div>
-      <div className="sm:flex justify-center items-center gap-1 my-5 p-5 ">
+      <div className="sm:flex justify-center items-center gap-1 my-5 py-5 ">
         <div className="shadow-md rounded-md p-5 bg-white sm:mb-0 mb-2">
           <h2>Our Vision</h2>
           <p>
@@ -72,7 +74,7 @@ export default function about() {
           </p>
         </div>
       </div>
-      
+
       <div className="bg-white my-10 p-5">
         <h2>Our Meeting</h2>
         <p>
@@ -91,11 +93,11 @@ export default function about() {
           look forward to seeing you there!
         </p>
         <div className="">
-        <Button link={dueLink} text={dueText} target={target} />
+          <Button link={dueLink} text={dueText} target={target} />
+        </div>
       </div>
-      </div>
-      
-      <div className="bg-white p-5 text-center my-20">
+
+      <div className="bg-white p-5 text-center my-10">
         <h2>Become a member</h2>
         <p>
           We are delighted to welcome you to the United Esan Organization! As a
@@ -140,14 +142,17 @@ export default function about() {
           celebrate and preserve the rich Esan culture and heritage.
         </p>
         <div className="">
-        <Button
-          link={constitutionLink}
-          text={constitutionText}
-          target={target}
-        />
+          <Button
+            link={constitutionLink}
+            text={constitutionText}
+            target={target}
+          />
+        </div>
       </div>
+      <div>
+        <Executives />
+        <BoardMembers />
       </div>
-   
     </Container>
   );
 }

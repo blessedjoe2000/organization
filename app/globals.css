@@ -13,10 +13,10 @@ body {
   @apply font-blinker text-light-blue;
 }
 h2 {
-  @apply font-bebasNeue text-sharp-red text-3xl p-2 text-center;
+  @apply font-bebasNeue text-sharp-red text-3xl text-center;
 }
 h3 {
-  @apply font-bebasNeue text-sharp-red text-xl p-2 text-center;
+  @apply font-bebasNeue text-sharp-red text-xl text-center;
 }
 
 input,

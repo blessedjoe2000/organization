@@ -9,7 +9,7 @@ export default function esanheritage() {
   return (
     <div>
       <VideoHeader />
-
+      <Container>
         <h2 className="mt-5"> Esan People and Culture</h2>
         <div className=" bg-white p-5">
           <p>
@@ -58,38 +58,41 @@ export default function esanheritage() {
           </p>
         </div>
 
+        <div className="bg-white mt-10 mb-20 pb-10">
+          <h2 className="pt-5 pb-2">
+            Map of Esan Land, Local Government Area and Towns
+          </h2>
 
-
-      <div
-        className="flex flex-col lg:flex-row  justify-center items-center gap-5 bg-white mb-5 px-5 pb-5
+          <div
+            className="flex flex-col lg:flex-row justify-center items-center gap-5  px-5 pb-5
       "
-      >
-        <div className="lg:w-1/2">
-          <h2 className="lg:mb-36">Map of Esan Land</h2>
-          <Image
-            src={esanmap}
-            alt="map of esan"
-            height={400}
-            className="image-full-width"
-          />
+          >
+            <div className=" lg:w-1/2">
+              <Image
+                src="https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiNxgNsDOQ6lt0IyHEJ8j7mpqMf5UwzC2VhGDT"
+                alt="map of esan"
+                height={400}
+                width={1500}
+                className="image-full-width"
+              />
+            </div>
+            <div className="lg:w-1/2">
+              <LGATable />
+            </div>
+          </div>
+          <div className=" mx-5 ">
+            <Link
+              href="https://en.wikipedia.org/wiki/Esan_people"
+              target="_blank"
+              className=""
+            >
+              <button className="text-center bg-sharp-red rounded-full w-full py-2 text-white hover:text-light-blue uppercase">
+                Learn more about esan people and culture
+              </button>
+            </Link>
+          </div>
         </div>
-        <div className="lg:w-1/2">
-          <h2>LGA and their Towns</h2>
-          <LGATable />
-        </div>
-      </div>
-      <div className="m-5">
-        <Link
-          href="https://en.wikipedia.org/wiki/Esan_people"
-          target="_blank"
-          className=""
-        >
-          <button className="text-center bg-sharp-red rounded-full w-full py-2 text-white hover:text-light-blue uppercase">
-            Learn more about esan people and culture
-          </button>
-        </Link>
-      </div>
-
+      </Container>
     </div>
   );
 }
