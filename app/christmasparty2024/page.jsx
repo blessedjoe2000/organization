@@ -11,8 +11,7 @@ import {
 } from "./styles";
 import Link from "next/link";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import { PhotoTitle } from "../gallery/styles";
-import { DuesButton } from "./styles";
+import { BackToGallery } from "./styles";
 
 const images = [
   "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhivuPqw57pi2nSb6ydYLsEK10MU39wgB5JHkft",
@@ -171,103 +170,97 @@ export default function ChristmasParty2024() {
   }, []);
 
   return (
-    <Container
-      sx={{
-        mt: { xs: "7rem", sm: "9rem" },
-        mb: { xs: "2rem", sm: "4rem" },
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-      }}
-    >
-      <PhotoTitle>Christmas Party 2024</PhotoTitle>
+    <div className="my-10">
+      <Container>
+        <h2 className="text-4xl">Christmas Party 2024</h2>
 
-      <GalleryImageContainer ref={containerRef}>
-        {images.map((url, index) => (
-          <Box key={index} className="gallery-item">
-            <Image
-              src={url}
-              alt={`Gallery image ${index + 1}`}
-              width={250}
-              height={250}
-              className="gallery-img"
-              onClick={() => setSelectedImageIndex(index)}
-              style={{ objectFit: "cover" }}
-            />
-          </Box>
-        ))}
-      </GalleryImageContainer>
-      {selectedImageIndex !== null && (
-        <PhotoPreviewContainer onClick={() => setSelectedImageIndex(null)}>
-          <Box sx={{ position: "relative" }}>
-            <PrevButton
-              onClick={(e) => {
-                e.stopPropagation();
-                prevImage();
-              }}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="size-6 svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M15.75 19.5 8.25 12l7.5-7.5"
-                />
-              </svg>
-            </PrevButton>
-            <Box
-              sx={{
-                width: "100%",
-                maxWidth: "900px",
-                margin: "0 auto",
-              }}
-            >
+        <GalleryImageContainer ref={containerRef}>
+          {images.map((url, index) => (
+            <Box key={index} className="gallery-item">
               <Image
-                src={images[selectedImageIndex]}
-                alt="Selected"
-                width={900}
-                height={500}
-                onClick={(e) => e.stopPropagation()}
-                className="preview-img"
-                layout="responsive"
-                objectFit="contain"
+                src={url}
+                alt={`Gallery image ${index + 1}`}
+                width={400}
+                height={250}
+                className="gallery-img"
+                onClick={() => setSelectedImageIndex(index)}
+                style={{ objectFit: "cover" }}
               />
             </Box>
-            <NextButton
-              onClick={(e) => {
-                e.stopPropagation();
-                nextImage();
-              }}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="size-6 svg"
+          ))}
+        </GalleryImageContainer>
+        {selectedImageIndex !== null && (
+          <PhotoPreviewContainer onClick={() => setSelectedImageIndex(null)}>
+            <Box sx={{ position: "relative" }}>
+              <PrevButton
+                onClick={(e) => {
+                  e.stopPropagation();
+                  prevImage();
+                }}
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="size-6 svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M15.75 19.5 8.25 12l7.5-7.5"
+                  />
+                </svg>
+              </PrevButton>
+              <Box
+                sx={{
+                  width: "100%",
+                  maxWidth: "900px",
+                  margin: "0 auto",
+                }}
+              >
+                <Image
+                  src={images[selectedImageIndex]}
+                  alt="Selected"
+                  width={900}
+                  height={500}
+                  onClick={(e) => e.stopPropagation()}
+                  className="preview-img"
+                  layout="responsive"
+                  objectFit="contain"
                 />
-              </svg>
-            </NextButton>
-          </Box>
-        </PhotoPreviewContainer>
-      )}
-      <Link href="/gallery">
-        <DuesButton>
-          <ArrowBackIcon /> Photo Gallery
-        </DuesButton>
-      </Link>
-    </Container>
+              </Box>
+              <NextButton
+                onClick={(e) => {
+                  e.stopPropagation();
+                  nextImage();
+                }}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="size-6 svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </NextButton>
+            </Box>
+          </PhotoPreviewContainer>
+        )}
+        <Link href="/gallery">
+          <BackToGallery>
+            <ArrowBackIcon /> Back To Gallery
+          </BackToGallery>
+        </Link>
+      </Container>
+    </div>
   );
 }

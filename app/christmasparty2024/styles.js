@@ -46,12 +46,17 @@ export const NextButton = styled(Button)`
   z-index: 100;
 `;
 
-export const DuesButton = styled(Button)`
+export const BackToGallery = styled(Button)`
   color: #fff;
-  background-color: #118b50;
+  background-color: #e4003a;
   border-radius: 10px;
   padding: 0.5rem 2rem;
   margin-top: 2rem;
+  width: 100%;
+  :hover {
+    background-color: #cb0404;
+    color: #3fa2f6;
+  }
 
   @media (max-width: 768px) {
     margin-top: 1rem;
