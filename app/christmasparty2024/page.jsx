@@ -3,15 +3,12 @@
 import { Box, Container } from "@mui/system";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import {
-  GalleryImageContainer,
-  NextButton,
-  PhotoPreviewContainer,
-  PrevButton,
-} from "./styles";
+import { GalleryImageContainer, PhotoPreviewContainer } from "./styles";
 import Link from "next/link";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { BackToGallery } from "./styles";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 
 const images = [
   "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhivuPqw57pi2nSb6ydYLsEK10MU39wgB5JHkft",
@@ -192,27 +189,17 @@ export default function ChristmasParty2024() {
         {selectedImageIndex !== null && (
           <PhotoPreviewContainer onClick={() => setSelectedImageIndex(null)}>
             <Box sx={{ position: "relative" }}>
-              <PrevButton
+              <button
                 onClick={(e) => {
                   e.stopPropagation();
                   prevImage();
                 }}
+                type="button"
+                className="absolute top-1/2 left-5 -translate-y-1/2 bg-sharp-red  p-1 mr-2.5 z-[100] text-white rounded-full"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="size-6 svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M15.75 19.5 8.25 12l7.5-7.5"
-                  />
-                </svg>
-              </PrevButton>
+                <ArrowBackIosNewIcon fontSize="large" />
+              </button>
+
               <Box
                 sx={{
                   width: "100%",
@@ -231,27 +218,16 @@ export default function ChristmasParty2024() {
                   objectFit="contain"
                 />
               </Box>
-              <NextButton
+              <button
                 onClick={(e) => {
                   e.stopPropagation();
                   nextImage();
                 }}
+                type="button"
+                className="absolute top-1/2 right-5 -translate-y-1/2 p-1 mr-2.5 z-[100] text-white bg-sharp-red rounded-full"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="size-6 svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
-                  />
-                </svg>
-              </NextButton>
+                <ArrowForwardIosIcon fontSize="large" />
+              </button>
             </Box>
           </PhotoPreviewContainer>
         )}

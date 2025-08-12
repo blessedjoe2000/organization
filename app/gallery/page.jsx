@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Box, Container } from "@mui/system";
-// import { BriefHeading } from "@/components/BriefAbout/styles";
 
 import {
   GalleryPhotoAndTitle,
@@ -21,8 +20,8 @@ export default function Gallery() {
     },
     {
       url: "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhi63m2AzQbuhio0m1HjzdJlpfwCEQYDPa9OyGK",
-      title: "Picnic 2024",
-      link: "/picnic2024",
+      title: "Picnic 2025",
+      link: "/picnic2025",
     },
   ];
   return (
