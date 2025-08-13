@@ -19,7 +19,7 @@ export default function Gallery() {
       link: "/christmasparty2024",
     },
     {
-      url: "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhi63m2AzQbuhio0m1HjzdJlpfwCEQYDPa9OyGK",
+      url: "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiff0hNSVNKuU6kVloF3csy5dmLE4xj8TDahXg",
       title: "Picnic 2025",
       link: "/picnic2025",
     },

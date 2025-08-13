@@ -6,7 +6,7 @@ import Executives from "../component/Executives/Executives";
 import BoardMembers from "../component/BoardMembers/BoardMembers";
 
 export default function about() {
-  const constitutionLink = "/";
+  const constitutionLink = "/files/UEO-Constitution.pdf";
   const constitutionText = "Click here to view UEO Constitution";
   const target = "_blank";
   const dueLink = "https://buy.stripe.com/6oEcPNcak5Ffb60cMN";
@@ -73,7 +73,9 @@ export default function about() {
         </div>
       </div>
 
-      <div className="bg-white my-10 p-5">
+      <Executives />
+
+      <div className="bg-white mb-10 mt-20 p-5">
         <h2>Our Meeting</h2>
         <p>
           We gather in person once every month, specifically on the second
@@ -95,7 +97,7 @@ export default function about() {
         </div>
       </div>
 
-      <div className="bg-white p-5 text-center my-10">
+      <div className="bg-white p-5 text-center my-5">
         <h2>Become a member</h2>
         <p>
           We are delighted to welcome you to the United Esan Organization! As a
@@ -148,7 +150,6 @@ export default function about() {
         </div>
       </div>
       <div>
-        <Executives />
         <BoardMembers />
       </div>
     </Container>

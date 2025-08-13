@@ -1,89 +1,79 @@
-import president from "@/public/images/executives/ueo_president.jpg";
 import Image from "next/image";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
 
 export default function Executives() {
+  const executivesData = [
+    {
+      name: "Mr. Jude Daudu",
+      photo:
+        "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiPwykVjYulmBJ4MDcgf8eYWxwjTrK0hVIyFUO",
+      office: "President",
+      email: "president@ueohouston.org",
+    },
+    {
+      name: "Mr. Chris Ehimen",
+      photo:
+        "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiTKyZVGfwajdVnh5Q9lRvTxDI10EZocMLq7O2",
+      office: "Vice President",
+      email: "vp@ueohouston.org",
+    },
+    {
+      name: "Mr. Collins Okosun",
+      photo:
+        "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhijDxf5378vW4p9Paid67Tbchq5xtgQZ1lSFu2",
+      office: "General Secretary",
+      email: "secretary@ueohouston.org",
+    },
+    {
+      name: "Mr. Victor Ikhuehi",
+      photo:
+        "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiZ2l5aqoxdhKlTEWtMzO4eUb08VR3CnagoLFy",
+      office: "Treasurer",
+      email: "treasurer@ueohouston.org",
+    },
+    {
+      name: "Mr. Scott Okosun",
+      photo:
+        "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiWKQ9NWsuvCF6Nj2b8XySonfKmeBEzwV9p1LQ",
+      office: "Financial Secretary",
+      email: "financialsec@ueohouston.org",
+    },
+    {
+      name: "Mr. Joseph Ugiagbe",
+      photo:
+        "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiPLica8ulmBJ4MDcgf8eYWxwjTrK0hVIyFUOE",
+      office: "P. R. O.",
+      email: "pro@ueohouston.org",
+    },
+  ];
   return (
-    <div className=" ">
-      <h2>UEO Current Executives</h2>
+    <div className="my-10 ">
+      <h2 className="mb-2">UEO Current Executives</h2>
       <div className="flex flex-wrap justify-center items-center">
-        <div className="bg-white flex flex-col justify-center items-center gap-2 p-5 shadow-md m-1">
-          <Image
-            src={president}
-            alt="ueo president"
-            width={300}
-            height={200}
-            className="rounded-full"
-          />
-          <div className="text-center text-lg">
-            <h3 className="  font-aclonica">Mr. Jude Daudu</h3>
-            <p className="text-gray-400">President</p>
+        {executivesData.map((executive) => (
+          <div
+            key={executive.office}
+            className="bg-white flex flex-col justify-center items-center gap-2 p-5 shadow-md m-1"
+          >
+            <Image
+              src={executive.photo}
+              alt={`UEO ${executive.office}`}
+              width={300}
+              height={200}
+              className="rounded-full"
+            />
+            <div className="text-center text-lg">
+              <h3 className="  font-aclonica text-light-blue">
+                {executive.name}
+              </h3>
+              <p className="text-sharp-red">{executive.office}</p>
+              <div className="flex justify-center items-center gap-1">
+                <MailOutlineIcon fontSize="small" />
+                <p className="">{executive.email}</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="bg-white flex flex-col justify-center items-center gap-2 p-5 shadow-md m-1">
-          <Image
-            src="https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiTKyZVGfwajdVnh5Q9lRvTxDI10EZocMLq7O2"
-            alt="ueo vice president"
-            width={300}
-            height={200}
-            className="rounded-full"
-          />
-          <div className="text-center text-lg">
-            <h3 className="  font-aclonica">Mr. Chris Ehimen</h3>
-            <p className="text-gray-400">Vice President</p>
-          </div>
-        </div>
-        <div className="bg-white flex flex-col justify-center items-center gap-2 p-5 shadow-md m-1">
-          <Image
-            src="https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhijDxf5378vW4p9Paid67Tbchq5xtgQZ1lSFu2"
-            alt="ueo genera secretary"
-            width={300}
-            height={200}
-            className="rounded-full"
-          />
-          <div className="text-center text-lg">
-            <h3 className="  font-aclonica">Mr. Collins Okosun</h3>
-            <p className="text-gray-400">General Secretary</p>
-          </div>
-        </div>
-        <div className="bg-white flex flex-col justify-center items-center gap-2 p-5 shadow-md m-1">
-          <Image
-            src="https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhi63m2AzQbuhio0m1HjzdJlpfwCEQYDPa9OyGK"
-            alt="ueo treasurer"
-            width={300}
-            height={200}
-            className="rounded-full"
-          />
-          <div className="text-center text-lg">
-            <h3 className="  font-aclonica">Mr. Victor Ikhuehi</h3>
-            <p className="text-gray-400">Treasurer</p>
-          </div>
-        </div>
-        <div className="bg-white flex flex-col justify-center items-center gap-2 p-5 shadow-md m-1">
-          <Image
-            src="https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiWKQ9NWsuvCF6Nj2b8XySonfKmeBEzwV9p1LQ"
-            alt="ueo financial secretary"
-            width={300}
-            height={200}
-            className="rounded-full"
-          />
-          <div className="text-center text-lg">
-            <h3 className="  font-aclonica">Mr. Scott Okosun</h3>
-            <p className="text-gray-400">Financial Secretary</p>
-          </div>
-        </div>
-        <div className="bg-white flex flex-col justify-center items-center gap-2 p-5 shadow-md m-1">
-          <Image
-            src="https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiPLica8ulmBJ4MDcgf8eYWxwjTrK0hVIyFUOE"
-            alt="ueo pro"
-            width={300}
-            height={200}
-            className="rounded-full"
-          />
-          <div className="text-center text-lg">
-            <h3 className="  font-aclonica">Mr. Joseph Ugiagbe</h3>
-            <p className="text-gray-400">P.R.O</p>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
