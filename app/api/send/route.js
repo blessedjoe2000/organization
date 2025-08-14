@@ -1,27 +1,33 @@
-import { Resend } from "resend";
-
-const resend = new Resend(process.env.RESEND_API_KEY);
+import nodemailer from "nodemailer";
 
 export async function POST(req) {
   try {
     const body = await req.json();
-    const ourEmail = "info@unitedesanorganizationhouston.org";
     const { firstName, lastName, email, mobile, message } = body;
 
-    const formData = await resend.emails.send({
-      from: "United Esan Organization <info@unitedesanorganizationhouston.org>",
-      to: [ourEmail],
-      subject: "Contact us message",
-      react: EmailTemplate({
-        firstName: firstName,
-        lastName: lastName,
-        email: email,
-        mobile: mobile,
-        message: message,
-      }),
+    console.log("here top :>> ");
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      host: "smtp.gmail.com",
+      port: 587,
+      secure: false,
+      auth: {
+        user: process.env.ADMIN_EMAIL,
+        pass: process.env.APP_PASSWORD,
+      },
     });
 
-    return new Response(JSON.stringify(formData), { status: 200 });
+    await transporter.sendMail({
+      from: {
+        name: "United Esan Ogranization",
+        address: process.env.ADMIN_EMAIL,
+      },
+      to: [`${process.env.ADMIN_NOTIFY_EMAIL}, ${process.env.ORG_EMAIL}`],
+      subject: `Message from UEO Website`,
+      text: `${firstName} ${lastName} with email "${email}" and phone number "${mobile}" sent a message with this content "${message}"`,
+    });
+
+    return new Response(JSON.stringify("message sent"), { status: 200 });
   } catch (error) {
     return new Response(JSON.stringify(error.message), { status: 500 });
   }

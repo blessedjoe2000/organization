@@ -1,6 +1,5 @@
 import { Container } from "@mui/material";
 import Brief from "./component/Brief/Brief";
-import FlashAlert from "./component/FlashAlert/FlashAlert";
 import Proverbs from "./component/Proverbs/Proverbs";
 import ShortNote from "./component/ShortNote/ShortNote";
 import Slider from "./component/Slider/Slider";
@@ -12,10 +11,10 @@ export default function Home() {
   return (
     <main>
       <Container>
-      <Slider />
-      <Brief />
-      <Proverbs initialProverb={initialProverb} />
-      <ShortNote />
+        <Slider />
+        <Brief />
+        <Proverbs initialProverb={initialProverb} />
+        <ShortNote />
       </Container>
     </main>
   );

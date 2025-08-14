@@ -1,5 +1,5 @@
 import Image from "next/image";
-import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import MarkunreadIcon from "@mui/icons-material/Markunread";
 
 export default function Executives() {
   const executivesData = [
@@ -68,7 +68,7 @@ export default function Executives() {
               </h3>
               <p className="text-sharp-red">{executive.office}</p>
               <div className="flex justify-center items-center gap-1">
-                <MailOutlineIcon fontSize="small" />
+                <MarkunreadIcon fontSize="small" />
                 <p className="">{executive.email}</p>
               </div>
             </div>

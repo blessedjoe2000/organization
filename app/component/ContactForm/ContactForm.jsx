@@ -3,12 +3,15 @@
 import axios from "axios";
 import { useState } from "react";
 import toast from "react-hot-toast";
+import { Loader2 } from "lucide-react";
+
 export default function ContactForm() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [mobile, setMobile] = useState("");
   const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const handleContactUs = async (e) => {
     e.preventDefault();
@@ -71,6 +74,7 @@ export default function ContactForm() {
         },
       });
     }
+    setLoading(true);
 
     const response = await axios.post("/api/send", {
       firstName,
@@ -79,6 +83,8 @@ export default function ContactForm() {
       mobile,
       message,
     });
+
+    setLoading(false);
 
     if (response.status === 200) {
       setFirstName(" "), setLastName(" ");
@@ -168,12 +174,18 @@ export default function ContactForm() {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         ></textarea>
-        <div className="flex justify-end">
+        <div className="">
           <button
             type="submit"
-            className="px-3 py-1 bg-sharp-red rounded-md text-white w-full"
+            disabled={loading}
+            className={`px-3 py-1 bg-sharp-red rounded-md text-white w-full ${
+              loading ? "cursor-not-allowed opacity-50" : ""
+            }`}
           >
-            Send
+            <div className="flex justify-center items-center gap-2">
+              {loading && <Loader2 className="animate-spin h-4 w-4" />}
+              Send
+            </div>
           </button>
         </div>
       </form>
