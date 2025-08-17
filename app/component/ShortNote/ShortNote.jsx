@@ -21,6 +21,8 @@ export default function ShortNote() {
         <Image
           src={project}
           alt="our projects"
+          width={900}
+          height={500}
           layout="responsive"
           data-aos="fade-up"
           className="my-5"
@@ -57,8 +59,10 @@ export default function ShortNote() {
       >
         <h2>Esan People and Culture</h2>
         <Image
-          src={esanpeople}
+          src="https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiZgsYgdoxdhKlTEWtMzO4eUb08VR3CnagoLFy"
           alt="esan people and culture"
+          width={900}
+          height={500}
           layout="responsive"
           data-aos="fade-up"
           className="my-5"
