@@ -9,12 +9,6 @@ export default function BoardMembers() {
       office: "Chairman, Board of Trustee",
     },
     {
-      name: "Mr. Kenneth Imoni Oseghale",
-      photo:
-        "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiJ6JSJO8dhJZqCmEIknoyjt30u2MHBKYw4Dvx",
-      office: "Member",
-    },
-    {
       name: "Dr. Henry Ohen",
       photo:
         "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiJ1VEui8dhJZqCmEIknoyjt30u2MHBKYw4Dvx",
@@ -30,6 +24,12 @@ export default function BoardMembers() {
       name: "Mr. Robinson Eronmosele",
       photo:
         "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiZxOQRzzoxdhKlTEWtMzO4eUb08VR3CnagoLF",
+      office: "Member",
+    },
+     {
+      name: "Mr. Chris Ehizoba",
+      photo:
+        "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiOIYomIKnQA0MNvwebGhZ2UdzmLfHlW83X6Vk",
       office: "Member",
     },
   ];
