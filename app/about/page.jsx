@@ -9,7 +9,7 @@ export default function about() {
   const constitutionLink = "/files/UEO-Constitution.pdf";
   const constitutionText = "Click here to view UEO Constitution";
   const target = "_blank";
-  const dueLink = "https://buy.stripe.com/6oEcPNcak5Ffb60cMN";
+  const dueLink = "https://www.zeffy.com/en-US/ticketing/united-esan-organization-due";
   const dueText = "Click here to pay UEO monthly due";
 
   return (
@@ -123,7 +123,7 @@ export default function about() {
             <strong>Pay the Registration Fee:</strong> A registration fee of
             twenty-five dollars ($25) is required. Click to{" "}
             <Link
-              href="https://buy.stripe.com/9AQ8zx0rCaZzb60cMO"
+              href="https://www.zeffy.com/en-US/ticketing/ueo-registration-fee"
               target="_blank"
               className="px-2 py-1 bg-sharp-red text-white rounded-md hover:text-light-blue"
             >

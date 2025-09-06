@@ -6,8 +6,9 @@ import Link from "next/link";
 import { Container } from "@mui/material";
 
 export default function projects() {
-  const donationLink = "https://donate.stripe.com/6oE8zx6Q0c3D7TO288";
+  const donationLink = "https://www.zeffy.com/en-US/donation-form/donate-to-esan-house";
   const donationText = "Click to Donate to Esan House Project Now";
+  const scholarshipLink = "https://www.zeffy.com/en-US/donation-form/donate-to-our-education-scholarship";
   const scholarshipText = "Click to Donate to AAU Scholarship project";
   const target = "_blank";
   return (
@@ -121,7 +122,7 @@ export default function projects() {
         </div>
       </div>
       <div className="mx-5 mb-20">
-        <Button link={donationLink} text={scholarshipText} target={target} />
+        <Button link={scholarshipLink} text={scholarshipText} target={target} />
       </div>
     </Container>
   );
