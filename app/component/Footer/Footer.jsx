@@ -22,7 +22,7 @@ export default function Footer() {
         </div>
         <div>
           <Link
-            href="https://donate.stripe.com/6oE8zx6Q0c3D7TO288"
+            href="https://www.zeffy.com/en-US/donation-form/donate-to-ueo"
             target="_blank"
             className="flex justify-center items-center gap-0.5 hover:text-light-blue hover:underline px-3 py-1 bg-sharp-red rounded-xl text-white font-semibold"
           >
