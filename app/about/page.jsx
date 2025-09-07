@@ -18,7 +18,7 @@ export default function about() {
         <h2>About Us</h2>
         <p>
           The United Esan Organization (UEO) in Houston, Texas has a rich
-          history spanning over 20 years. Founded in 1979, it has grown into a
+          history. Founded in 1988, it has grown into a
           vibrant and diverse institution, proudly representing Esan culture
           while reaching out to people of all backgrounds. UEO is dedicated to
           promoting and strengthening the overall wellbeing and values of the
