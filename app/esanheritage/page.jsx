@@ -1,6 +1,5 @@
 import Image from "next/image";
 import VideoHeader from "../component/VideoHeader/VideoHeader";
-import esanmap from "@/public/images/projects/esanlgamap.jpg";
 import LGATable from "../component/LGATable/LGATable";
 import Link from "next/link";
 import { Container } from "@mui/system";
