@@ -3,10 +3,11 @@ import MarkunreadIcon from "@mui/icons-material/Markunread";
 import RoomOutlinedIcon from "@mui/icons-material/RoomOutlined";
 import PhoneIphoneOutlinedIcon from "@mui/icons-material/PhoneIphoneOutlined";
 import MoveToInboxOutlinedIcon from "@mui/icons-material/MoveToInboxOutlined";
+import { Container } from "@mui/system";
 
 export default function Contact() {
   return (
-    <div>
+    <Container>
       <h2 className="mt-5">Contact Us</h2>
       <ContactForm />
       <div className="sm:flex justify-around items-center gap-5 py-5 bg-white m-5">
@@ -40,6 +41,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </div>
+    </Container>
   );
 }

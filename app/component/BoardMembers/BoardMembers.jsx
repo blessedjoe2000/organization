@@ -39,7 +39,7 @@ export default function BoardMembers() {
       <div className="flex flex-wrap justify-center items-center">
         {boardMembersData.map((boardmember) => (
           <div
-            key={boardmember.office}
+            key={boardmember.name}
             className="bg-white flex flex-col justify-center items-center gap-2 p-5 shadow-md m-1"
           >
             <Image
