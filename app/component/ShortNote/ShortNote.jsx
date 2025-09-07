@@ -1,8 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import project from "@/public/images/projects/ueo_project3.png";
-import esanpeople from "@/public/images/projects/ueo_project4.png";
 import "aos/dist/aos.css";
 import Button from "../Button/Button";
 
@@ -19,7 +17,7 @@ export default function ShortNote() {
       >
         <h2>Our Projects</h2>
         <Image
-          src={project}
+          src="https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhifPRnXfVNKuU6kVloF3csy5dmLE4xj8TDahXg"
           alt="our projects"
           width={900}
           height={500}
@@ -38,11 +36,11 @@ export default function ShortNote() {
 
           <p className="my-5">
             The Esan House will feature a reception hall with a seating capacity
-            of approximately 500, designed to host various events and generate
-            revenue for the Esan community in Houston. This facility will
-            support our mission of promoting Esan culture and heritage while
-            providing a venue for gatherings, celebrations, and other community
-            activities.
+            of approximately 200 in it&apos;s first phase, designed to host
+            various events and generate revenue for the Esan community in
+            Houston. This facility will support our mission of promoting Esan
+            culture and heritage while providing a venue for gatherings,
+            celebrations, and other community activities.
           </p>
 
           <p className="mb-5">
@@ -59,7 +57,7 @@ export default function ShortNote() {
       >
         <h2>Esan People and Culture</h2>
         <Image
-          src="https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiZgsYgdoxdhKlTEWtMzO4eUb08VR3CnagoLFy"
+          src="https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiKgF78E6hmOJql04RBu3PnL9CrFsIx8NzpTMX"
           alt="esan people and culture"
           width={900}
           height={500}
