@@ -136,33 +136,29 @@ export default function ChristmasParty2024() {
 
   useEffect(() => {
     const galleryContainer = containerRef.current;
-    const handleImageLoad = () => {
-      if (galleryContainer) {
-        const items = galleryContainer.querySelectorAll(".gallery-item");
-        items.forEach((item) => {
-          const img = item?.querySelector("img");
-          if (img) {
-            const ratio = img.naturalHeight / img.naturalWidth;
-            const span = Math.ceil((250 * ratio) / 10);
-            item.style.gridRowEnd = `span ${span}`;
-          }
-        });
+    if (!galleryContainer) return;
+
+    const handleImageLoad = (img) => {
+      const ratio = img.naturalHeight / img.naturalWidth;
+      const span = Math.ceil((250 * ratio) / 10);
+      if (img.parentElement) {
+        img.parentElement.style.gridRowEnd = `span ${span}`;
       }
     };
 
-    // Attach event listeners to all images
-    const images = galleryContainer?.querySelectorAll("img");
-    images?.forEach((img) => {
+    const imgs = galleryContainer.querySelectorAll("img");
+    imgs.forEach((img) => {
       if (img.complete) {
-        handleImageLoad();
+        handleImageLoad(img);
       } else {
-        img.onload = handleImageLoad;
+        img.onload = () => handleImageLoad(img);
       }
     });
 
-    // Cleanup
     return () => {
-      images?.forEach((img) => (img.onload = null));
+      imgs.forEach((img) => {
+        img.onload = null;
+      });
     };
   }, []);
 
@@ -182,7 +178,7 @@ export default function ChristmasParty2024() {
                 className="gallery-img"
                 onClick={() => setSelectedImageIndex(index)}
                 style={{ objectFit: "cover" }}
-                unoptimized
+                loading="lazy"
               />
             </Box>
           ))}
