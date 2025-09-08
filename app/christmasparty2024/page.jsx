@@ -172,7 +172,7 @@ export default function ChristmasParty2024() {
             <Box key={index} className="gallery-item">
               <Image
                 src={url}
-                alt={`Gallery image ${index + 1}`}
+                alt={`christmas party ${index + 1}`}
                 width={400}
                 height={250}
                 className="gallery-img"
@@ -213,8 +213,10 @@ export default function ChristmasParty2024() {
                   className="preview-img"
                   layout="responsive"
                   objectFit="contain"
+                  unoptimized
                 />
               </Box>
+
               <button
                 onClick={(e) => {
                   e.stopPropagation();

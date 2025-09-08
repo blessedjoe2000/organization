@@ -172,7 +172,7 @@ export default function Picnic2025() {
             <Box key={index} className="gallery-item">
               <Image
                 src={url}
-                alt={`Gallery image ${index + 1}`}
+                alt={`picnic 2025 ${index + 1}`}
                 width={400}
                 height={250}
                 className="gallery-img"
@@ -213,6 +213,7 @@ export default function Picnic2025() {
                   className="preview-img"
                   layout="responsive"
                   objectFit="contain"
+                  unoptimized
                 />
               </Box>
               <button
