@@ -182,6 +182,7 @@ export default function ChristmasParty2024() {
                 className="gallery-img"
                 onClick={() => setSelectedImageIndex(index)}
                 style={{ objectFit: "cover" }}
+                unoptimized
               />
             </Box>
           ))}

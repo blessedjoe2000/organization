@@ -23,6 +23,7 @@ export default function projects() {
             width={1500}
             className="w-full"
             layout="responsive"
+            unoptimized
           />
         </div>
         <div className="w-full lg:w-1/2 bg-white p-5">
@@ -69,6 +70,7 @@ export default function projects() {
             width={1500}
             className="w-full"
             layout="responsive"
+            unoptimized
           />
         </div>
       </div>
@@ -104,6 +106,7 @@ export default function projects() {
             width={1500}
             className="w-full"
             layout="responsive"
+            unoptimized
           />
         </div>
       </div>
@@ -117,6 +120,7 @@ export default function projects() {
             width={1500}
             className="w-full"
             layout="responsive"
+            unoptimized
           />
         </div>
         <div className="w-full lg:w-1/2 bg-white p-5">

@@ -24,6 +24,7 @@ export default function ShortNote() {
           layout="responsive"
           data-aos="fade-up"
           className="my-5"
+          unoptimized
         />
         <div className=" content ">
           <p>
@@ -64,6 +65,7 @@ export default function ShortNote() {
           layout="responsive"
           data-aos="fade-up"
           className="my-5"
+          unoptimized
         />
         <div className=" content">
           <div>

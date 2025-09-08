@@ -73,6 +73,7 @@ export default function esanheritage() {
                 height={400}
                 width={1500}
                 className="image-full-width"
+                unoptimized
               />
             </div>
             <div className="lg:w-1/2">

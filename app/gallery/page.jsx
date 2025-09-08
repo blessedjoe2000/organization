@@ -41,6 +41,7 @@ export default function Gallery() {
                     width={300}
                     height={200}
                     sizes="(max-width: 300px) 100vw, 300px"
+                    unoptimized
                   />
                 </PhotoWrapper>
                 <PhotoTitle>{imageDetail.title}</PhotoTitle>

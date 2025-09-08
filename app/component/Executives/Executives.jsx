@@ -61,6 +61,7 @@ export default function Executives() {
               width={300}
               height={200}
               className="rounded-full"
+              unoptimized
             />
             <div className="text-center text-lg">
               <h3 className="  font-aclonica text-light-blue">
