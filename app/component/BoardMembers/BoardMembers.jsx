@@ -29,7 +29,7 @@ export default function BoardMembers() {
     {
       name: "Mr. Chris Ehizoba",
       photo:
-        "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiPwbVhzdulmBJ4MDcgf8eYWxwjTrK0hVIyFUO",
+        "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhix8hXpJQ9GuqUIhDO7KjmY4oB35fZXFHinTaM",
       office: "Member",
     },
   ];
