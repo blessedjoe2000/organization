@@ -11,20 +11,32 @@ export default function Footer() {
           <SocialMedia />
         </div>
         <div className="flex flex-col gap-2 py-10 sm:py-0">
-          <Link href="/">Home</Link>
-          <Link href="/projects">Projects</Link>
-          <Link href="/contact">Contact Us</Link>
+          <Link className="nav-list" href="/">
+            Home
+          </Link>
+          <Link className="nav-list" href="/projects">
+            Projects
+          </Link>
+          <Link className="nav-list" href="/contact">
+            Contact Us
+          </Link>
         </div>
         <div className="flex flex-col gap-2 pb-10 sm:pb-0">
-          <Link href="/about">About Us</Link>
-          <Link href="/gallery">Gallery</Link>
-          <Link href="/esanheritage">Esan Heritage</Link>
+          <Link className="nav-list" href="/about">
+            About Us
+          </Link>
+          <Link className="nav-list" href="/gallery">
+            Gallery
+          </Link>
+          <Link className="nav-list" href="/esanheritage">
+            Esan Heritage
+          </Link>
         </div>
         <div>
           <Link
             href="https://www.zeffy.com/en-US/donation-form/donate-to-ueo"
             target="_blank"
-            className="flex justify-center items-center gap-0.5 hover:text-light-blue hover:underline px-3 py-1 bg-sharp-red rounded-xl text-white font-semibold"
+            className="flex justify-center items-center gap-0.5 hover:bg-dark-red hover:underline px-3 py-1 bg-sharp-red rounded-xl text-white font-semibold"
           >
             <button>DONATE</button>
             <MonetizationOnIcon fontSize="small" />

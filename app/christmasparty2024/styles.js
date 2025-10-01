@@ -48,14 +48,13 @@ export const NextButton = styled(Button)`
 
 export const BackToGallery = styled(Button)`
   color: #fff;
-  background-color: #e4003a;
+  background-color: #0ead69;
   border-radius: 10px;
   padding: 0.5rem 2rem;
   margin-top: 2rem;
   width: 100%;
   :hover {
-    background-color: #cb0404;
-    color: #3fa2f6;
+    background-color: #2c6e49;
   }
 
   @media (max-width: 768px) {

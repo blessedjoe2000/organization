@@ -10,7 +10,7 @@
 @tailwind utilities;
 
 body {
-  @apply font-blinker text-light-blue;
+  @apply font-blinker;
 }
 h2 {
   @apply font-bebasNeue text-sharp-red text-3xl text-center;
@@ -22,7 +22,7 @@ h3 {
 input,
 textarea,
 select {
-  @apply border border-gray-200 rounded-sm w-full mb-2 p-1 outline-none focus-visible:border-light-blue text-black;
+  @apply border border-gray-200 rounded-sm w-full mb-2 p-1 outline-none focus-visible:border-sharp-red;
   @apply shadow-sm;
 }
 

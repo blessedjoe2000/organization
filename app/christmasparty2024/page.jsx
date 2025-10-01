@@ -231,7 +231,7 @@ export default function ChristmasParty2024() {
           </PhotoPreviewContainer>
         )}
         <Link href="/gallery">
-          <BackToGallery>
+          <BackToGallery >
             <ArrowBackIcon /> Back To Gallery
           </BackToGallery>
         </Link>

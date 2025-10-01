@@ -19,8 +19,10 @@ module.exports = {
       colors: {
         "light-blue": "#3FA2F6",
         offwhite: "#FCF8F3",
-        "sharp-red": "#E4003A",
-        "dark-red": "#cb0404",
+        "sharp-red": "#0ead69",
+        "original-red": "#E4003A",
+        // "dark-red": "#cb0404",
+        "dark-red": "#2c6e49",
       },
     },
   },

@@ -9,7 +9,8 @@ export default function about() {
   const constitutionLink = "/files/UEO-Constitution.pdf";
   const constitutionText = "Click here to view UEO Constitution";
   const target = "_blank";
-  const dueLink = "https://www.zeffy.com/en-US/ticketing/united-esan-organization-due";
+  const dueLink =
+    "https://www.zeffy.com/en-US/ticketing/united-esan-organization-due";
   const dueText = "Click here to pay UEO monthly due";
 
   return (
@@ -18,12 +19,12 @@ export default function about() {
         <h2>About Us</h2>
         <p>
           The United Esan Organization (UEO) in Houston, Texas has a rich
-          history. Founded in 1988, it has grown into a
-          vibrant and diverse institution, proudly representing Esan culture
-          while reaching out to people of all backgrounds. UEO is dedicated to
-          promoting and strengthening the overall wellbeing and values of the
-          Esan people through a variety of programs and services aimed at
-          individuals, groups, and families.
+          history. Founded in 1988, it has grown into a vibrant and diverse
+          institution, proudly representing Esan culture while reaching out to
+          people of all backgrounds. UEO is dedicated to promoting and
+          strengthening the overall wellbeing and values of the Esan people
+          through a variety of programs and services aimed at individuals,
+          groups, and families.
         </p>
         <p className="py-5">
           As the primary agency responsible for informal Esan education, UEO
@@ -113,7 +114,7 @@ export default function about() {
             <Link
               href="/files/UEO-REG-FORM.pdf"
               target="_blank"
-              className="px-2 py-1 bg-light-blue text-white rounded-md hover:text-sharp-red"
+              className="px-2 py-1 bg-light-blue text-white rounded-md hover:bg-[#1e88e5]"
             >
               here
             </Link>{" "}
@@ -125,7 +126,7 @@ export default function about() {
             <Link
               href="https://www.zeffy.com/en-US/ticketing/ueo-registration-fee"
               target="_blank"
-              className="px-2 py-1 bg-sharp-red text-white rounded-md hover:text-light-blue"
+              className="px-2 py-1 bg-sharp-red text-white rounded-md hover:bg-dark-red"
             >
               pay
             </Link>

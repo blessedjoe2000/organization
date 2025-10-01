@@ -86,7 +86,7 @@ export default function esanheritage() {
               target="_blank"
               className=""
             >
-              <button className="text-center bg-sharp-red rounded-full w-full py-2 text-white hover:text-light-blue uppercase">
+              <button className="text-center bg-sharp-red rounded-full w-full py-2 text-white hover:bg-dark-red uppercase">
                 Learn more about esan people and culture
               </button>
             </Link>

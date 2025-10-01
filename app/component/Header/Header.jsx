@@ -46,7 +46,7 @@ function Header() {
           <Link
             href="https://www.zeffy.com/en-US/donation-form/donate-to-ueo"
             target="_blank"
-            className="flex justify-center items-center gap-0.5 hover:text-light-blue hover:underline px-3 py-1 bg-sharp-red rounded-xl text-white font-semibold"
+            className="flex justify-center items-center gap-0.5 hover:bg-dark-red hover:underline px-3 py-1 bg-sharp-red rounded-xl text-white font-semibold"
           >
             <button>DONATE</button>
             <MonetizationOnIcon fontSize="small" />
@@ -99,7 +99,7 @@ function Header() {
                 <Link
                   href="https://www.zeffy.com/en-US/donation-form/donate-to-ueo"
                   target="_blank"
-                  className="flex justify-center items-center gap-0.5 hover:text-light-blue hover:underline px-3 py-1 bg-sharp-red rounded-xl text-white font-semibold mt-2"
+                  className="flex justify-center items-center gap-0.5  hover:underline px-3 py-1 bg-sharp-red rounded-xl text-white font-semibold"
                 >
                   <button>DONATE</button>
                   <MonetizationOnIcon fontSize="small" />
