@@ -4,6 +4,7 @@ import Proverbs from "./component/Proverbs/Proverbs";
 import ShortNote from "./component/ShortNote/ShortNote";
 import Slider from "./component/Slider/Slider";
 import { getProverbs, getRandomProverb } from "./lib/getProverbs";
+import PopUpImage from "./component/PopUpImage/PopUpImage";
 
 export default function Home() {
   const proverbs = getProverbs();
@@ -11,6 +12,7 @@ export default function Home() {
   return (
     <main>
       <Container>
+        <PopUpImage />
         <Slider />
         <Brief />
         <Proverbs initialProverb={initialProverb} />
