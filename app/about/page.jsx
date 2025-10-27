@@ -114,7 +114,7 @@ export default function about() {
             <Link
               href="/files/UEO-REG-FORM.pdf"
               target="_blank"
-              className="px-2 py-1 bg-light-blue text-white rounded-md hover:bg-[#1e88e5]"
+              className="px-2 py-1 bg-light-blue text-white rounded-md hover:bg-[#3a86ff]"
             >
               here
             </Link>{" "}

@@ -39,6 +39,9 @@ function Header() {
             <Link href="/gallery" className="nav-list">
               Gallery
             </Link>
+            <Link href="/forms" className="nav-list">
+              Forms
+            </Link>
             <Link href="/contact" className="nav-list">
               Contact Us
             </Link>

@@ -14,11 +14,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="bg-offwhite">
-      <body className="">
+      <body className="flex flex-col min-h-screen">
         <Toaster position="top-right" />
-        <ThemeProvider/>
+        <ThemeProvider />
         <Header />
-        <FlashAlert/>
+        <main className="flex-grow">
+          <FlashAlert />
+        </main>
         {children}
         <Footer />
       </body>
