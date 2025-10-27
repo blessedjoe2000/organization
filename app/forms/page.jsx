@@ -39,9 +39,7 @@ function Forms() {
           transition={{ duration: 0.6 }}
           className="max-w-2xl text-center mb-10"
         >
-          <h1 className="text-3xl font-bold text-gray-800 mb-3">
-            Available Forms
-          </h1>
+          <h2 className="mb-3">Available Forms</h2>
           <p className="">
             Explore the list of available forms below. Click any form to open
             and download it.
