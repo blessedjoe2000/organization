@@ -143,7 +143,7 @@ export default function projects() {
                   <Link
                     href="/files/UEO-Scholarship-Application-Form.pdf"
                     target="_blank"
-                    className="text-sharp-red text-light-blue"
+                    className=" text-light-blue hover:text-dark-blue "
                   >
                     Click here
                   </Link>{" "}
