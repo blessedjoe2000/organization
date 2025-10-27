@@ -18,11 +18,12 @@ module.exports = {
 
       colors: {
         "light-blue": "#3FA2F6",
+        "dark-blue": "#3a86ff",
         offwhite: "#FCF8F3",
-        "sharp-red": "#0ead69",
+        "light-green": "#0ead69",
         "original-red": "#E4003A",
         // "dark-red": "#cb0404",
-        "dark-red": "#2c6e49",
+        "dark-green": "#2c6e49",
       },
     },
   },

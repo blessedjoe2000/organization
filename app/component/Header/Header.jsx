@@ -13,7 +13,7 @@ function Header() {
   };
 
   return (
-    <nav className="text-sharp-red bg-white sticky top-0 z-10">
+    <nav className="text-light-blue bg-white sticky top-0 z-10">
       <div
         className={
           showHamburger
@@ -46,7 +46,7 @@ function Header() {
           <Link
             href="https://www.zeffy.com/en-US/donation-form/donate-to-ueo"
             target="_blank"
-            className="flex justify-center items-center gap-0.5 hover:bg-dark-red hover:underline px-3 py-1 bg-sharp-red rounded-xl text-white font-semibold"
+            className="flex justify-center items-center gap-0.5 hover:bg-dark-blue hover:underline px-3 py-1 bg-light-blue rounded-xl text-white font-semibold"
           >
             <button>DONATE</button>
             <MonetizationOnIcon fontSize="small" />
@@ -55,9 +55,9 @@ function Header() {
 
         <div onClick={toggleHambuger} className=" sm:hidden  ">
           <div className="space-y-1 p-2 ">
-            <div className="w-6 h-1 bg-sharp-red"></div>
-            <div className="w-6 h-1 bg-sharp-red"></div>
-            <div className="w-6 h-1 bg-sharp-red"></div>
+            <div className="w-6 h-1 bg-light-blue"></div>
+            <div className="w-6 h-1 bg-light-blue"></div>
+            <div className="w-6 h-1 bg-light-blue"></div>
           </div>
 
           <div
@@ -68,8 +68,8 @@ function Header() {
             }
           >
             <button className="p-2 mb-1 relative mr-auto">
-              <div className="w-6 h-1 rotate-45 absolute bg-sharp-red"></div>
-              <div className="w-6 h-1 -rotate-45 absolute bg-sharp-red"></div>
+              <div className="w-6 h-1 rotate-45 absolute bg-light-blue"></div>
+              <div className="w-6 h-1 -rotate-45 absolute bg-light-blue"></div>
             </button>
 
             <div className="flex flex-col items-center gap-1">
@@ -99,7 +99,7 @@ function Header() {
                 <Link
                   href="https://www.zeffy.com/en-US/donation-form/donate-to-ueo"
                   target="_blank"
-                  className="flex justify-center items-center gap-0.5  hover:underline px-3 py-1 bg-sharp-red rounded-xl text-white font-semibold"
+                  className="flex justify-center items-center gap-0.5  hover:underline px-3 py-1 bg-light-blue rounded-xl text-white font-semibold"
                 >
                   <button>DONATE</button>
                   <MonetizationOnIcon fontSize="small" />

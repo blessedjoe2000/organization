@@ -36,7 +36,7 @@ export default function Footer() {
           <Link
             href="https://www.zeffy.com/en-US/donation-form/donate-to-ueo"
             target="_blank"
-            className="flex justify-center items-center gap-0.5 hover:bg-dark-red hover:underline px-3 py-1 bg-sharp-red rounded-xl text-white font-semibold"
+            className="flex justify-center items-center gap-0.5 hover:bg-dark-blue hover:underline px-3 py-1 bg-light-blue rounded-xl text-white font-semibold"
           >
             <button>DONATE</button>
             <MonetizationOnIcon fontSize="small" />

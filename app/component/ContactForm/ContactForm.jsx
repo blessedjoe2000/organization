@@ -178,7 +178,7 @@ export default function ContactForm() {
           <button
             type="submit"
             disabled={loading}
-            className={`px-3 py-1 bg-sharp-red rounded-md text-white w-full hover:bg-dark-red ${
+            className={`px-3 py-1 bg-light-blue rounded-md text-white w-full hover:bg-dark-blue ${
               loading ? "cursor-not-allowed opacity-50" : ""
             }`}
           >

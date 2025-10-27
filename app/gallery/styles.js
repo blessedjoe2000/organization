@@ -28,7 +28,7 @@ export const PhotoWrapper = styled(Box)`
 export const PhotoTitle = styled(Box)`
   font-size: 1.5rem;
   font-weight: 400;
-  color: #e4003a;
+  color: #3fa2f6;
   text-align: center;
   padding-top: 10px;
   font-family: "Amita";

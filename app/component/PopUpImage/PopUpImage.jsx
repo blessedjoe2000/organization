@@ -41,7 +41,7 @@ function PopUpImage() {
             <button
               onClick={() => setShowPopup(false)}
               on
-              className="absolute top-2 right-2 text-white px-3 py-1 rounded-full bg-dark-red hover:text-original-red text-xl"
+              className="absolute top-2 right-2 text-white px-3 py-1 rounded-full bg-dark-blue hover:text-original-red text-xl"
             >
               X
             </button>

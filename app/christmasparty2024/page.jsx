@@ -192,7 +192,7 @@ export default function ChristmasParty2024() {
                   prevImage();
                 }}
                 type="button"
-                className="absolute top-1/2 left-5 -translate-y-1/2 bg-sharp-red  p-1 mr-2.5 z-[100] text-white rounded-full"
+                className="absolute top-1/2 left-5 -translate-y-1/2 bg-light-blue  p-1 mr-2.5 z-[100] text-white rounded-full"
               >
                 <ArrowBackIosNewIcon fontSize="large" />
               </button>
@@ -223,7 +223,7 @@ export default function ChristmasParty2024() {
                   nextImage();
                 }}
                 type="button"
-                className="absolute top-1/2 right-5 -translate-y-1/2 p-1 mr-2.5 z-[100] text-white bg-sharp-red rounded-full"
+                className="absolute top-1/2 right-5 -translate-y-1/2 p-1 mr-2.5 z-[100] text-white bg-light-blue rounded-full"
               >
                 <ArrowForwardIosIcon fontSize="large" />
               </button>
@@ -231,7 +231,7 @@ export default function ChristmasParty2024() {
           </PhotoPreviewContainer>
         )}
         <Link href="/gallery">
-          <BackToGallery >
+          <BackToGallery>
             <ArrowBackIcon /> Back To Gallery
           </BackToGallery>
         </Link>
