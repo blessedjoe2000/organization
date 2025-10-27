@@ -8,6 +8,7 @@ export default function Footer() {
       <div className="sm:flex justify-between items-center sm:p-20 p-10 gap-5">
         <div className="flex flex-col justify-center items-center">
           <h2>Social Links</h2>
+          <p>Click To Follow Us On Social Media</p>
           <SocialMedia />
         </div>
         <div className="flex flex-col gap-2 py-10 sm:py-0">

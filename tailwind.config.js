@@ -19,7 +19,7 @@ module.exports = {
       colors: {
         "light-blue": "#3FA2F6",
         "dark-blue": "#3a86ff",
-        offwhite: "#FCF8F3",
+        offwhite: "#f8f9fa",
         "light-green": "#0ead69",
         "original-red": "#E4003A",
         // "dark-red": "#cb0404",

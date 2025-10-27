@@ -13,7 +13,7 @@ export default function projects() {
   const target = "_blank";
   return (
     <Container>
-      <h2 className="mt-5">Esan House Project</h2>
+      <h2 className="mt-5 text-5xl">Esan House Project</h2>
       <div className="flex flex-col lg:flex-row justify-center items-center gap-5 mx-5 mb-5">
         <div className="w-full lg:w-1/2">
           <Image

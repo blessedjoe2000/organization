@@ -31,7 +31,7 @@ const forms = [
 function Forms() {
   return (
     <Container>
-      <div className="min-h-screen bg-gray-50 flex flex-col items-center px-4 py-12">
+      <div className="min-h-screen  flex flex-col items-center px-4 py-12">
         {/* Page header */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
