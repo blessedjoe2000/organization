@@ -41,13 +41,13 @@ function PopUpImage() {
             <button
               onClick={() => setShowPopup(false)}
               on
-              className="absolute top-2 right-2 text-white px-3 py-1 rounded-full bg-dark-blue hover:text-original-red text-xl"
+              className="absolute top-2 right-2 text-white px-3 py-1 rounded-full bg-light-blue hover:bg-dark-blue text-xl"
             >
               X
             </button>
 
             <Image
-              src="https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiJYTRqB8dhJZqCmEIknoyjt30u2MHBKYw4Dvx"
+              src="https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiv9BZnnpi2nSb6ydYLsEK10MU39wgB5JHkftC"
               alt="Popup"
               width={700}
               height={900}
