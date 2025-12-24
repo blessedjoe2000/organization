@@ -13,9 +13,12 @@ export default function FlashAlert() {
         celebrating freedom.
       </p> */}
       <p className="scrolling-text">
-        Esan Community Christmas Party 2025! Scheduled for December 19, 2025. At
-        Brenda&apos;s Reception Hall located at 13900 Beechnut St in Houston,
-        Texas 77083. Come and celebrate Christmas season with us.
+        The United Esan Organization extends warm wishes to you and your family
+        for a joyous and memorable Christmas celebration. May this season be
+        filled with love, peace, and togetherness. As we welcome the New Year,
+        we wish you good health, renewed hope, and abundant prosperity in all
+        your endeavors. May the year ahead bring continued blessings and success
+        to you and your loved ones. Iselogbe!
       </p>
     </div>
   );

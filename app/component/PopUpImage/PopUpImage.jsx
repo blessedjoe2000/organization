@@ -47,7 +47,7 @@ function PopUpImage() {
             </button>
 
             <Image
-              src="https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiv9BZnnpi2nSb6ydYLsEK10MU39wgB5JHkftC"
+              src="https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiCPgBanWaHwke5hxVdFvnTNQgGYL86AM9RXBD"
               alt="Popup"
               width={700}
               height={900}
