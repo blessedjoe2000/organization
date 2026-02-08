@@ -12,13 +12,19 @@ export default function FlashAlert() {
         Organization Houston: preserving culture, promoting unity, and
         celebrating freedom.
       </p> */}
-      <p className="scrolling-text">
+      {/* <p className="scrolling-text">
         The United Esan Organization extends warm wishes to you and your family
         for a joyous and memorable Christmas celebration. May this season be
         filled with love, peace, and togetherness. As we welcome the New Year,
         we wish you good health, renewed hope, and abundant prosperity in all
         your endeavors. May the year ahead bring continued blessings and success
         to you and your loved ones. Iselogbe!
+      </p> */}
+      <p className="scrolling-text">
+        The United Esan Organization (UEO) will be participating in a community
+        volunteer service at the Houston Food Bank warehouse. Date : Saturday,
+        March 28, 2026. Address : 535 Portwall St., Houston, TX 77029. Time :
+        8:00 a.m. - 12:00 p.m. Call 832-614-2274 to register.
       </p>
     </div>
   );

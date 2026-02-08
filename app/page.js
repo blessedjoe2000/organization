@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main>
       <Container>
-        <PopUpImage />
+        {/* <PopUpImage /> */}
         <Slider />
         <Brief />
         <Proverbs initialProverb={initialProverb} />
