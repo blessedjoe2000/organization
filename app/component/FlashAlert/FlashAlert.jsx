@@ -2,7 +2,7 @@ import React from "react";
 
 export default function FlashAlert() {
   return (
-    <div className="bg-dark-blue py-1 text-white font-semibold font-bebasNeue overflow-hidden whitespace-nowrap text-xl">
+    <div className="bg-dark-blue py-1 text-white font-semibold font-bebasNeue overflow-hidden whitespace-nowrap text-xl fixed top-100 left-0 w-full z-50">
       {/* <p className="scrolling-text">
         Happy 65th Independence Day, Nigeria! Today, we proudly join hands
         across generations and oceans to celebrate the strength, resilience, and

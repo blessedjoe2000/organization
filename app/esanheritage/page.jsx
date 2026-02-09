@@ -6,7 +6,7 @@ import { Container } from "@mui/system";
 
 export default function esanheritage() {
   return (
-    <div>
+    <div className="mt-5">
       <VideoHeader />
       <Container>
         <h2 className="mt-5"> Esan People and Culture</h2>

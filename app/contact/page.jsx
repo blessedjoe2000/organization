@@ -8,7 +8,7 @@ import { Container } from "@mui/system";
 export default function Contact() {
   return (
     <Container>
-      <h2 className="mt-5">Contact Us</h2>
+      <h2 className="mt-10">Contact Us</h2>
       <ContactForm />
       <div className="sm:flex justify-around items-center gap-5 py-5 bg-white m-5">
         <div className="flex flex-col justify-center items-center gap-2">
