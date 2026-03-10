@@ -4,11 +4,12 @@ import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 
 const slideImages = [
-  "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhig6BEeslzdBIL4Qb6WnpTeyVwfOl03iGv9P2x",
-  "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiQFPLjsqW3eF7GOrLaUD5iXkJoYfEhn2Sd8uv",
-  "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiZCZmWxoxdhKlTEWtMzO4eUb08VR3CnagoLFy",
-  "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiM3CmadH8wsP0WLeCc1TrinQImzBavHZJ4F7O",
+  "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhi8mlC4mMG1xN2g9JtBV7uw3ZzmSRWlsUYj6TI",
+  "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiR1lheo6LBPQZHCvnSt6kmMl0Grei9XWU18Yj",
   "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhi5VbPhIN3gGKxRru9b6Jw2dIBOfPLvaQyHWqE",
+  "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiQFPLjsqW3eF7GOrLaUD5iXkJoYfEhn2Sd8uv",
+  "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiTGQ9BOfwajdVnh5Q9lRvTxDI10EZocMLq7O2",
+  "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiM3CmadH8wsP0WLeCc1TrinQImzBavHZJ4F7O",
   "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiaL5gYhgZFXZ1C9tgNRPAhIUWK20ybd5QJBD7",
   "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiND7rihOQ6lt0IyHEJ8j7mpqMf5UwzC2VhGDT",
 ];
@@ -25,7 +26,7 @@ const properties = {
 
 export default function Slider() {
   return (
-    <div className="slide-container">
+    <div className="slide-container mt-8">
       <Slide {...properties}>
         {slideImages.map((slideImage, index) => (
           <div className="each-slide" key={index}>
