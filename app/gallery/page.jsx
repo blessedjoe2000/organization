@@ -23,6 +23,11 @@ export default function Gallery() {
       title: "Picnic 2025",
       link: "/picnic2025",
     },
+    {
+      url: "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhio9xWdzQLitDdcXlyRpgEIh4bFCZW9m7eJTBP",
+      title: "Volunteering 2026 - HFB",
+      link: "/volunteering2026",
+    },
   ];
   return (
     <Container sx={{ py: "3rem" }}>

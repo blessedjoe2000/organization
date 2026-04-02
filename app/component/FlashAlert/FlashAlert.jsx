@@ -21,10 +21,11 @@ export default function FlashAlert() {
         to you and your loved ones. Iselogbe!
       </p> */}
       <p className="scrolling-text">
-        The United Esan Organization (UEO) will be participating in a community
-        volunteer service at the Houston Food Bank warehouse. Date : Saturday,
-        March 28, 2026. Address : 535 Portwall St., Houston, TX 77029. Time :
-        8:00 a.m. - 12:00 p.m. Call 832-614-2274 to register.
+        The United Esan Organization (UEO) will be holding its Picture Day on
+        June 14, 2026. All members are encouraged to be punctual and come
+        dressed in their native attire (Igbulu and Izakpa), along with the
+        igbulu cap and UEO muffler. For more information, please call
+        832-614-2274.
       </p>
     </div>
   );
