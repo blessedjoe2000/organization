@@ -24,6 +24,11 @@ export default function Gallery() {
       link: "/picnic2025",
     },
     {
+      url: "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiqvBIrYyt9EFZPXhoLKgTytDNCr5SVb1vQiHA",
+      title: "Christmas Party 2025",
+      link: "/christmasparty2025",
+    },
+    {
       url: "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhio9xWdzQLitDdcXlyRpgEIh4bFCZW9m7eJTBP",
       title: "Volunteering 2026 - HFB",
       link: "/volunteering2026",

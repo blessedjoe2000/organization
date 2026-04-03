@@ -126,7 +126,9 @@ function Volunteering2026() {
   return (
     <div className="my-10">
       <Container>
-        <h2 className="text-4xl">Christmas Party 2024</h2>
+        <h2 className="text-4xl">
+          Houston Food Bank Volunteering Service 2026
+        </h2>
 
         <GalleryImageContainer ref={containerRef}>
           {images.map((url, index) => (

@@ -129,7 +129,7 @@ export default function Picnic2025() {
   const prevImage = () => {
     if (selectedImageIndex !== null) {
       setSelectedImageIndex(
-        (selectedImageIndex - 1 + images.length) % images.length
+        (selectedImageIndex - 1 + images.length) % images.length,
       );
     }
   };
@@ -165,7 +165,7 @@ export default function Picnic2025() {
   return (
     <div className="my-10">
       <Container>
-        <h2 className="text-4xl">Christmas Party 2024</h2>
+        <h2 className="text-4xl">Picnic 2025</h2>
 
         <GalleryImageContainer ref={containerRef}>
           {images.map((url, index) => (
