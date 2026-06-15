@@ -21,8 +21,8 @@ export default function Contact() {
           <div className="flex gap-2 items-center">
             <RoomOutlinedIcon />
             <div className="flex flex-col">
-              <p className="text-lg">11923 Bissonnet Street,</p>
-              <p className="text-lg ">Houston, TX 77099</p>
+              <p className="text-lg">14722 Lindita Drive,</p>
+              <p className="text-lg ">Houston, TX 77083</p>
             </div>
           </div>
         </div>
