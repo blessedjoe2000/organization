@@ -21,11 +21,8 @@ export default function FlashAlert() {
         to you and your loved ones. Iselogbe!
       </p> */}
       <p className="scrolling-text">
-        The United Esan Organization (UEO) will be holding its Picture Day on
-        June 14, 2026. All members are encouraged to be punctual and come
-        dressed in their native attire (Igbulu and Izakpa), along with the
-        igbulu cap and UEO muffler. For more information, please call
-        832-614-2274.
+        The United Esan Organization (UEO) will be holding it&apos;s Christmas
+        party on December 18, 2026. More information will follow soon.
       </p>
     </div>
   );

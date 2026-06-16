@@ -4,6 +4,7 @@ import RoomOutlinedIcon from "@mui/icons-material/RoomOutlined";
 import PhoneIphoneOutlinedIcon from "@mui/icons-material/PhoneIphoneOutlined";
 import MoveToInboxOutlinedIcon from "@mui/icons-material/MoveToInboxOutlined";
 import { Container } from "@mui/system";
+import GoogleMap from "../component/GoogleMap/GoogleMap";
 
 export default function Contact() {
   return (
@@ -41,6 +42,9 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      {/* <div>
+        <GoogleMap />
+      </div> */}
     </Container>
   );
 }
