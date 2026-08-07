@@ -42,9 +42,9 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      {/* <div>
+      <div>
         <GoogleMap />
-      </div> */}
+      </div>
     </Container>
   );
 }
