@@ -3,33 +3,31 @@ import Image from "next/image";
 export default function BoardMembers() {
   const boardMembersData = [
     {
-      name: "Mr. Matthew Iyere",
+      name: "Mr. Bright Usifoh",
       photo:
-        "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhijF1HzQ78vW4p9Paid67Tbchq5xtgQZ1lSFu2",
+        "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiwQrhP0ecSAsezopEyCfJx9PbBw25gX7v4Tau",
       office: "Chairman, Board of Trustee",
     },
     {
-      name: "Dr. Henry Ohen",
+      name: "Mr. Samson Okosun",
       photo:
-        "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiJ1VEui8dhJZqCmEIknoyjt30u2MHBKYw4Dvx",
-      office: "Member",
-    },
-    {
-      name: "High Chief Christain Ighalo",
-      photo:
-        "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhixFAjh49GuqUIhDO7KjmY4oB35fZXFHinTaMp",
-      office: "Member",
-    },
-    {
-      name: "Mr. Robinson Eronmosele",
-      photo:
-        "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiZxOQRzzoxdhKlTEWtMzO4eUb08VR3CnagoLF",
+        "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiKScgAahmOJql04RBu3PnL9CrFsIx8NzpTMXV",
       office: "Member",
     },
     {
       name: "Mr. Chris Ehizoba",
       photo:
         "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhix8hXpJQ9GuqUIhDO7KjmY4oB35fZXFHinTaM",
+      office: "Member",
+    },
+    {
+      name: "Mr Peter Orukpe",
+      photo: "",
+      office: "Member",
+    },
+    {
+      name: "Mr. Andrew Odia",
+      photo: "",
       office: "Member",
     },
   ];
