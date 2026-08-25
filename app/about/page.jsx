@@ -87,7 +87,7 @@ export default function about() {
         </p>
         <p className="pt-5">
           For the exact meeting location, please visit our{" "}
-          <Link href="/contact" className=" hover:text-sharp-red">
+          <Link href="/contact" className=" hover:text-[#3a86ff]">
             <q>Contact Us</q>
           </Link>{" "}
           page where you will find the address and other relevant details. We
