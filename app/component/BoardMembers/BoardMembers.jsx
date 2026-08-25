@@ -15,6 +15,12 @@ export default function BoardMembers() {
       office: "Member",
     },
     {
+      name: "Mr. Andrew Odia",
+      photo:
+        "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhinnwAvymXx3G5p71Fq6LDbi9Bs4mJgolQEt2f",
+      office: "Member",
+    },
+    {
       name: "Mr. Chris Ehizoba",
       photo:
         "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhix8hXpJQ9GuqUIhDO7KjmY4oB35fZXFHinTaM",
@@ -22,12 +28,8 @@ export default function BoardMembers() {
     },
     {
       name: "Mr Peter Orukpe",
-      photo: "",
-      office: "Member",
-    },
-    {
-      name: "Mr. Andrew Odia",
-      photo: "",
+      photo:
+        "https://76yw7v2l2z.ufs.sh/f/6tuizpJQbuhiGy8oN0nNKldaY5ygf0oRZJMtBxWw9ED7TUbv",
       office: "Member",
     },
   ];
