@@ -122,11 +122,11 @@ export default function about() {
           </li>
           <li>
             <strong>Pay the Registration Fee:</strong> A registration fee of
-            twenty-five dollars ($25) is required. Click to{" "}
+            fifty dollars ($50) is required. Click to{" "}
             <Link
               href="https://www.zeffy.com/en-US/ticketing/ueo-registration-fee"
               target="_blank"
-              className="px-2 py-1 bg-sharp-red text-white rounded-md hover:bg-dark-red"
+              className="px-2 py-1 bg-light-blue text-white rounded-md hover:bg-[#3a86ff]"
             >
               pay
             </Link>
