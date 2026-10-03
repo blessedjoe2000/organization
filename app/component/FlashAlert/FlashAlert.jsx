@@ -24,7 +24,7 @@ export default function FlashAlert() {
         The United Esan Organization (UEO) will be holding it&apos;s End of Year
         / Christmas party on December 18, 2026. Venue: All Saints Anglican
         Church Hall, 13403 Renn Rd, Houston, TX 77083. Time: 7pm. For more
-        information: Call UEO PRO - 346-673-6644 soon.
+        information: Call UEO PRO - 346-673-6644.
       </p>
     </div>
   );
